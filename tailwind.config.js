@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        '3xl': '1650px'
+        '3xl': '2300px'
         // 4k
       },
       fontFamily:{
@@ -25,10 +25,10 @@ module.exports = {
       'lg': '1024px',
       // => Laptop S
 
-      'xl': '1280px',
+      'xl': '1440px',
       // => Laptop M
 
-      '2xl': '1440px',
+      '2xl': '1900px',
       // => Laptop L
       
     }
