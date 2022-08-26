@@ -246,7 +246,7 @@ const RatingSlider = () => {
             </Swiper>
             <div className='flex justify-center lg:justify-end space-x-3'>
                 <div ref={navigationPrevRef} >
-                    <button className='btn rounded-full bg-black'><FaLessThan/></button>
+                    <button className='btn rounded-full bg-black'><FaLessThan /></button>
                 </div>
                 <div ref={navigationNextRef}>
                     <button className='btn rounded-full bg-white border-0 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'><FaGreaterThan className='text-black' /></button>

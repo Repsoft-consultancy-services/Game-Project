@@ -29,7 +29,7 @@ const Stats = () => {
                         <h1 className='text-xl lg:text-5xl font-bold'>10M+</h1>
                         <p className='text-[10px] lg:text-base mt-4'>Testing Hours</p>
                     </div>
-                   
+
                 </div>
             </div>
         </div>
