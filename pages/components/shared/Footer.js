@@ -10,12 +10,12 @@ import Link from 'next/link';
 const Footer = () => {
     return (
         <div className='w-full bg-black text-white'>
-            <div className='p-20'>
-                <div className='flex flex-col lg:flex-row justify-start lg:justify-between items-start'>
+            <div className='p-10 lg:p-20'>
+                <div className='flex flex-row justify-between items-start'>
                     <div>
-                        <h1 className='text-3xl font-semibold'>Contact Us</h1>
-                        <div className='text-xl flex space-x-5 mt-5'>
-                            <div className='mt-2'>
+                        <h1 className='text-[8.75px] lg:text-3xl font-semibold'>Contact Us</h1>
+                        <div className='text-[6.13px] lg:text-xl flex space-x-5 mt-3 lg:mt-5'>
+                            <div className='mt-0 lg:mt-2'>
                                 <GoLocation className='text-white' />
                             </div>
                             <div>
@@ -23,8 +23,8 @@ const Footer = () => {
                                     Maharashtra, India. 410506</p>
                             </div>
                         </div>
-                        <div className='text-xl flex space-x-5 mt-5'>
-                            <div className='mt-2'>
+                        <div className='text-[6.13px] lg:text-xl flex space-x-5  mt-3 lg:mt-5'>
+                            <div className='mt-0 lg:mt-2'>
                                 <FiPhoneCall className='text-white' />
                             </div>
                             <div>
@@ -32,8 +32,8 @@ const Footer = () => {
                                     +91 9767652894</p>
                             </div>
                         </div>
-                        <div className='text-xl flex space-x-5 mt-5'>
-                            <div className='mt-2'>
+                        <div className='text-[6.13px] lg:text-xl flex space-x-5  mt-3 lg:mt-5'>
+                            <div className='mt-0 lg:mt-2'>
                                 <IoIosMail className='text-white' />
                             </div>
                             <div>
@@ -41,24 +41,24 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='text-2xl'>
-                        <div className='flex text-left lg:text-right flex-col space-y-2'>
+                    <div className='text-[7px] lg:text-2xl text-right'>
+                        <div className='flex flex-col justify-end ml-auto space-y-1 lg:space-y-2'>
                             <Link href='/'>Home</Link>
                             <Link href='/'>Services</Link>
                             <Link href='/'>Contact Us</Link>
                             <Link href='/'>Join Us</Link>
                             <Link href='/'>About Us</Link>
                         </div>
-                        <div className='flex space-x-4 text-4xl mt-5'>
+                        <div className='flex space-x-2 lg:space-x-4 text-xs lg:text-4xl mt-5'>
                             <Link href=""><AiOutlineInstagram /></Link>
                             <Link href=""><AiOutlineTwitter /></Link>
                             <Link href=""><IoLogoTwitch /></Link>
                             <Link href=""><AiFillYoutube /></Link>
-                            <Link href=""><FaFacebookF className='text-3xl' /></Link>
+                            <Link href=""><FaFacebookF className='text-xs lg:text-3xl' /></Link>
                         </div>
                     </div>
                 </div>
-                <div className='mt-8'>
+                {/* <div className='mt-8'>
                     <hr />
                 </div>
                 <div className='flex justify-between mt-8 -mb-10 text-slate-400'>
@@ -69,7 +69,7 @@ const Footer = () => {
                         <p>Privacy Policy</p>
                         <p>Terms & Conditions</p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );

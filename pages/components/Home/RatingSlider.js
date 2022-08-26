@@ -5,7 +5,7 @@ import { FaLessThan, FaGreaterThan } from 'react-icons/fa'
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
+import { Navigation } from "swiper";
 import user from '../../../public/user.png'
 import Image from 'next/image';
 
@@ -13,7 +13,7 @@ const RatingSlider = () => {
     const navigationPrevRef = useRef(null);
     const navigationNextRef = useRef(null);
     return (
-        <div className='mt-10 xl:h-[30rem]'>
+        <div className='mt-10 h-[20rem] lg:h-[40rem] xl:h-[30rem]'>
             <Swiper
                 spaceBetween={10}
                 loop={true}
@@ -27,11 +27,8 @@ const RatingSlider = () => {
                     nextEl: navigationNextRef.current,
                 }}
                 breakpoints={{
-                    640: {
-                        slidesPerView: 1,
-                    },
-                    768: {
-                        slidesPerView: 3,
+                    320: {
+                        slidesPerView: 2,
                     },
                     1024: {
                         slidesPerView: 4,
@@ -43,7 +40,7 @@ const RatingSlider = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className='h-[390px] text-center p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
+                    <div className='h-[265px] lg:h-[390px] text-center p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
                         <div className='flex items-center justify-between'>
                             <div className='rounded-full'>
                                 <Image src={user} alt=""></Image>
@@ -61,13 +58,13 @@ const RatingSlider = () => {
                                 />
                             </div>
                         </div>
-                        <div className='mt-20 font-semibold'>
+                        <div className='mt-5 lg:mt-20 font-semibold'>
                             <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry”</p>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='h-[390px] text-center p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
+                    <div className='h-[265px] lg:h-[390px] text-center p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
                         <div className='flex items-center justify-between'>
                             <div className='rounded-full'>
                                 <Image src={user} alt=""></Image>
@@ -85,13 +82,13 @@ const RatingSlider = () => {
                                 />
                             </div>
                         </div>
-                        <div className='mt-20 font-semibold'>
+                        <div className='mt-5 lg:mt-20 font-semibold'>
                             <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry”</p>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='h-[390px] text-center p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
+                    <div className='h-[265px] lg:h-[390px] text-center p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
                         <div className='flex items-center justify-between'>
                             <div className='rounded-full'>
                                 <Image src={user} alt=""></Image>
@@ -109,12 +106,12 @@ const RatingSlider = () => {
                                 />
                             </div>
                         </div>
-                        <div className='mt-20 font-semibold'>
+                        <div className='mt-5 lg:mt-20 font-semibold'>
                             <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry”</p>
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide><div className='h-[390px] text-center p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
+                <SwiperSlide><div className='h-[265px] lg:h-[390px] text-center p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
                     <div className='flex items-center justify-between'>
                         <div className='rounded-full'>
                             <Image src={user} alt=""></Image>
@@ -132,11 +129,11 @@ const RatingSlider = () => {
                             />
                         </div>
                     </div>
-                    <div className='mt-20 font-semibold'>
+                    <div className='mt-5 lg:mt-20 font-semibold'>
                         <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry”</p>
                     </div>
                 </div></SwiperSlide>
-                <SwiperSlide><div className='h-[390px] text-center p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
+                <SwiperSlide><div className='h-[265px] lg:h-[390px] text-center p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
                     <div className='flex items-center justify-between'>
                         <div className='rounded-full'>
                             <Image src={user} alt=""></Image>
@@ -154,11 +151,11 @@ const RatingSlider = () => {
                             />
                         </div>
                     </div>
-                    <div className='mt-20 font-semibold'>
+                    <div className='mt-5 lg:mt-20 font-semibold'>
                         <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry”</p>
                     </div>
                 </div></SwiperSlide>
-                <SwiperSlide><div className='h-[390px] text-center p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
+                <SwiperSlide><div className='h-[265px] lg:h-[390px] text-center p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
                     <div className='flex items-center justify-between'>
                         <div className='rounded-full'>
                             <Image src={user} alt=""></Image>
@@ -176,11 +173,11 @@ const RatingSlider = () => {
                             />
                         </div>
                     </div>
-                    <div className='mt-20 font-semibold'>
+                    <div className='mt-5 lg:mt-20 font-semibold'>
                         <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry”</p>
                     </div>
                 </div></SwiperSlide>
-                <SwiperSlide><div className=' h-[390px] text-center p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
+                <SwiperSlide><div className=' h-[265px] lg:h-[390px] text-center p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
                     <div className='flex items-center justify-between'>
                         <div className='rounded-full'>
                             <Image src={user} alt=""></Image>
@@ -198,11 +195,11 @@ const RatingSlider = () => {
                             />
                         </div>
                     </div>
-                    <div className='mt-20 font-semibold'>
+                    <div className='mt-5 lg:mt-20 font-semibold'>
                         <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry”</p>
                     </div>
                 </div></SwiperSlide>
-                <SwiperSlide><div className=' h-[390px] text-center p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
+                <SwiperSlide><div className=' h-[265px] lg:h-[390px] text-center p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
                     <div className='flex items-center justify-between'>
                         <div className='rounded-full'>
                             <Image src={user} alt=""></Image>
@@ -220,11 +217,11 @@ const RatingSlider = () => {
                             />
                         </div>
                     </div>
-                    <div className='mt-20 font-semibold'>
+                    <div className='mt-5 lg:mt-20 font-semibold'>
                         <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry”</p>
                     </div>
                 </div></SwiperSlide>
-                <SwiperSlide><div className=' h-[390px] text-center p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
+                <SwiperSlide><div className=' h-[265px] lg:h-[390px] text-center p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
                     <div className='flex items-center justify-between'>
                         <div className='rounded-full'>
                             <Image src={user} alt=""></Image>
@@ -242,17 +239,17 @@ const RatingSlider = () => {
                             />
                         </div>
                     </div>
-                    <div className='mt-20 font-semibold'>
+                    <div className='mt-5 lg:mt-20 font-semibold'>
                         <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry”</p>
                     </div>
                 </div></SwiperSlide>
             </Swiper>
-            <div className='flex justify-end space-x-3'>
+            <div className='flex justify-center lg:justify-end space-x-3'>
                 <div ref={navigationPrevRef} >
-                    <button className='px-4 py-2 border border-black rounded-md'><FaLessThan className='text-black' /></button>
+                    <button className='btn rounded-full bg-black'><FaLessThan/></button>
                 </div>
                 <div ref={navigationNextRef}>
-                    <button className='px-4 py-2 border border-black rounded-md'><FaGreaterThan className='text-black' /></button>
+                    <button className='btn rounded-full bg-white border-0 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'><FaGreaterThan className='text-black' /></button>
                 </div>
             </div>
         </div>

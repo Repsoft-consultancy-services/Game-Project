@@ -1,11 +1,12 @@
 import React from 'react';
+import BannerSlider from './BannerSlider';
 
 const Slider = () => {
     return (
-        <div className='xl:w-[80rem] 2xl:w-[100rem] 3xl:w-[150rem]'>
+        <div className='w-full xl:w-[80rem] 2xl:w-[95rem] 3xl:w-[150rem]'>
             <div>
-                <h1>slider will go here</h1>
-                <h1 className='text-5xl font-bold text-center mt-10'>“Lorem Ipsum is simply dummy text of <br />the printing and typesetting industry”</h1>
+                <BannerSlider></BannerSlider>
+                <h1 className='text-2xl lg:text-5xl font-bold text-center mt-10'>“Lets dive into the vast world of ravendise and<br />explore the most creative world out there”</h1>
             </div>
         </div>
     );

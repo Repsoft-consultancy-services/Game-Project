@@ -8,7 +8,7 @@ import CODM from '../../../public/CODM.png'
 const Partner = () => {
     return (
         <div className='w-full bg-black text-white'>
-            <h1 className='text-5xl text-center font-bold'>Our Partner</h1>
+            <h1 className='text-2xl lg:text-5xl text-center font-bold mt-3'>Our Partners</h1>
             <div className='flex justify-evenly items-center my-10'>
                 <div>
                     <Image src={CR} alt=""></Image>
