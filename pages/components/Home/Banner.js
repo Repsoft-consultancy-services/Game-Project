@@ -22,8 +22,8 @@ const Banner = () => {
                     <div className='hidden lg:block'>
                         <Image src={RDtext} alt=""></Image>
                     </div>
-                    <p className='text-base lg:text-2xl font-semibold ml-4 text-center lg:text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia qui odit cumque, neque placeat quae at amet expedita mollitia maxime, fugit dolorum debitis inventore voluptatibus. Non voluptatem dolorem quaerat quasi.</p>
-                    <div className='flex justify-center lg:justify-start'>
+                    <p className='text-base lg:text-2xl font-semibold ml-0 lg:ml-[6px] text-center lg:text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia qui odit cumque, neque placeat quae at amet expedita mollitia maxime, fugit dolorum debitis inventore voluptatibus. Non voluptatem dolorem quaerat quasi.</p>
+                    <div className='flex justify-center lg:justify-start ml-0 lg:ml-[6px]'>
                         <button className='btn bg-black text-white text-lg normal-case px-10 rounded-md mt-10'>Get in Touch</button>
                     </div>
                 </div>
