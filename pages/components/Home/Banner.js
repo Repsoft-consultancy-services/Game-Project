@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import banner from '../../../public/valagents.png'
-import RDtext from '../../../public/Ravendise Png white 2.png'
+import RDtext from '../../../public/RavendiseBanner.png'
 
 const Banner = () => {
     return (
