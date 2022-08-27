@@ -18,7 +18,6 @@ const Rating = () => {
                         <StarRatings
                             rating={rating}
                             starRatedColor="black"
-                            changeRating={false}
                             numberOfStars={5}
                             name='rating'
                             starDimension="40px"
@@ -29,7 +28,6 @@ const Rating = () => {
                         <StarRatings
                             rating={rating}
                             starRatedColor="black"
-                            changeRating={false}
                             numberOfStars={5}
                             name='rating'
                             starDimension="30px"
