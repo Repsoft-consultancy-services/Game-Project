@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import formwriting from '../../public/formwriting.png'
+import upload from '../../public/upload.png'
 import formtext from '../../public/formtext.png'
 const Form = () => {
     return (
@@ -9,7 +9,7 @@ const Form = () => {
             <div className="rounded-[20px] bg-white drop-shadow-[2px_4px_25px_rgba(0,0,0,0.15)]">
                 <div className='flex items-center justify-center space-x-0 lg:space-x-10'>
                     <div className="bg-[url('/formbg.png')] bg-no-repeat bg-cover rounded-[20px] hidden lg:flex items-center justify-center w-1/3 lg:h-[910px] xl:h-[790px]">
-                        <div className=''>
+                        <div className='mr-2'>
                             <Image src={formtext} alt=""></Image>
                         </div>
                     </div>
@@ -21,26 +21,29 @@ const Form = () => {
                                     <label className="label">
                                         <span className="text-base font-semibold">Full Name</span>
                                     </label>
-                                    <input type="text" placeholder="Type here" className="border-b py-7 border-black lg:w-[360px]" />
+                                    <input type="text" placeholder="John doe" className="border-b py-7 border-black lg:w-[360px]" />
                                 </div>
                                 <div className="form-control w-full lg:max-w-xs">
                                     <label className="label">
                                         <span className="text-base font-semibold">Contact Number</span>
                                     </label>
-                                    <input type="text" placeholder="Type here" className="border-b py-7 border-black lg:w-[360px]" />
+                                    <input type="text" placeholder="1234567890" className="border-b py-7 border-black lg:w-[360px]" />
                                 </div>
                             </div>
                             <div className="form-control w-full lg:max-w-xs mb-7">
                                 <label className="label">
                                     <span className="text-base font-semibold">Email</span>
                                 </label>
-                                <input type="text" placeholder="Type here" className="border-b py-7 border-black lg:w-[360px]" />
+                                <input type="text" placeholder="Johndoe@gmail.com" className="border-b py-7 border-black lg:w-[360px]" />
                             </div>
                             <div className="form-control w-full lg:max-w-xs mb-7">
                                 <label className="label">
                                     <span className="text-base font-semibold">Upload CV</span>
                                 </label> <br />
-                                <input type="file" placeholder="Type here" className="border-b py-7 border-black w-full lg:max-w-xs" />
+                                <div className=''>
+                                    <button className='bg-[#EEEEEE] rounded-[10px] py-5'> <div className='px-32 py-2'><Image src={upload} alt=""></Image> </div><input type="file" placeholder="Type here" className="opacity-0 absolute -mt-10 -ml-20 hover:cursor-pointer" /></button>
+                                </div>
+
                             </div>
                         </div>
                         <div className='flex justify-center items-center'>
