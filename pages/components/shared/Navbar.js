@@ -10,9 +10,9 @@ const Navbar = () => {
     const menu = <>
         <li><Link href='/'>Home</Link></li>
         <li><Link href='/'>Services</Link></li>
-        <li><Link href='/'>Contact Us</Link></li>
-        <li><Link href='/'>Join Us</Link></li>
-        <li><Link href='/'>About Us</Link></li>
+        <li><Link href='/contactUs'>Contact Us</Link></li>
+        <li><Link href='/joinUs'>Join Us</Link></li>
+        <li><Link href='/aboutUs'>About Us</Link></li>
     </>
     return (
         <div className="navbar border-b-2 border-black font-semibold h-[20px]">
