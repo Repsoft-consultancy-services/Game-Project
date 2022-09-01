@@ -25,7 +25,7 @@ const Banner = () => {
                        
                     </div>
                     <div className='hidden lg:block'>
-                        <Image src={aboutBannerlg}></Image>
+                        <Image src={aboutBannerlg} alt=""></Image>
                     </div>
                 </div>
 
@@ -33,7 +33,7 @@ const Banner = () => {
                     <h1 className='text-center text-3xl underline font-semibold' >Who are we?</h1>
                     <div className='flex mt-16'>
                         <div className='flex-1 hidden lg:block'>
-                            <Image src={spoidor}></Image>
+                            <Image src={spoidor} alt=""></Image>
                         </div>
                         <div className='flex-1 px-5'>
                             <p className='text-2xl text-center lg:text-right font-semibold'>For Studios and Publishers, traditional outsourcing models have proven costly,
