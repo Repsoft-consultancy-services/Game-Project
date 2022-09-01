@@ -19,7 +19,7 @@ const Services = () => {
     return (
         <div className='mt-5 mb-16 lg:mb-0 w-full'>
            <h1 className='text-2xl lg:text-5xl font-bold text-center text-black'>Services We offer</h1>
-            <div className="h-[600px] lg:w-[110%]">
+            <div className="h-[600px]">
                 <Swiper
                     spaceBetween={50}
                     modules={[Navigation]}
