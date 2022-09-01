@@ -9,7 +9,7 @@ import { CgMenuLeft } from 'react-icons/cg';
 const Navbar = () => {
     const menu = <>
         <li><Link href='/'>Home</Link></li>
-        <li><Link href='/'>Services</Link></li>
+        <li><Link href='/services'>Services</Link></li>
         <li><Link href='/contactUs'>Contact Us</Link></li>
         <li><Link href='/joinUs'>Join Us</Link></li>
         <li><Link href='/aboutUs'>About Us</Link></li>

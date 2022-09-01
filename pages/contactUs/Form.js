@@ -11,11 +11,11 @@ const Form = () => {
     return (
         <div className='text-black px-5 lg:px-24 my-20'>
             <div className="rounded-[20px] bg-white drop-shadow-[2px_4px_25px_rgba(0,0,0,0.15)]">
-                <div className='flex items-center justify-center space-x-0 lg:space-x-10'>
-                    <div className="bg-black text-white rounded-[20px] w-1/3 h-[670px]">
+                <div className='flex flex-col-reverse lg:flex-row items-center justify-center space-x-0 lg:space-x-10'>
+                    <div className="bg-black text-white rounded-[20px] w-full lg:w-1/3 h-[500px] lg:h-[670px] ">
                         <div className='px-10 mt-20'>
-                            <h1 className='text-[8.75px] lg:text-4xl font-bold text-center mt-5 mb-5 uppercase'>Contact Us</h1>
-                            <div className='text-[6.13px] lg:text-xl flex space-x-5 mt-3 lg:mt-20'>
+                            <h1 className='text-4xl font-bold text-center mt-5 mb-5 uppercase'>Contact Us</h1>
+                            <div className='text-xl flex space-x-5 mt-3 lg:mt-20'>
                                 <div className='mt-0 lg:mt-2 '>
                                     <GoLocation className='text-white' />
                                 </div>
@@ -24,7 +24,7 @@ const Form = () => {
                                         Maharashtra, India. 410506</p>
                                 </div>
                             </div>
-                            <div className='text-[6.13px] lg:text-xl flex space-x-5  mt-3 lg:mt-20'>
+                            <div className='text-xl flex space-x-5  mt-3 lg:mt-20'>
                                 <div className='mt-0 lg:mt-2'>
                                     <FiPhoneCall className='text-white' />
                                 </div>
@@ -33,7 +33,7 @@ const Form = () => {
                                         +91 9767652894</p>
                                 </div>
                             </div>
-                            <div className='text-[6.13px] lg:text-xl flex space-x-5  mt-3 lg:mt-20'>
+                            <div className='text-xl flex space-x-5  mt-3 lg:mt-20'>
                                 <div className='mt-0 lg:mt-2'>
                                     <IoIosMail className='text-white' />
                                 </div>
@@ -41,12 +41,12 @@ const Form = () => {
                                     <p>Ravendisestudio@gmail.com</p>
                                 </div>
                             </div>
-                            <div className='flex space-x-2 lg:space-x-4 text-xs lg:text-4xl absolute bottom-0 mb-5'>
+                            <div className='flex space-x-4 text-4xl mt-10 lg:mt-0 ml-6 lg:ml-0 lg:absolute lg:bottom-0 mb-5'>
                                 <Link href=""><AiOutlineInstagram /></Link>
                                 <Link href=""><AiOutlineTwitter /></Link>
                                 <Link href=""><IoLogoTwitch /></Link>
                                 <Link href=""><AiFillYoutube /></Link>
-                                <Link href=""><FaFacebookF className='text-xs lg:text-3xl' /></Link>
+                                <Link href=""><FaFacebookF className='text-3xl' /></Link>
                             </div>
                         </div>
 
