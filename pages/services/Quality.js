@@ -22,8 +22,8 @@ const Quality = () => {
             </div>
             <div className=' mb-20'>
                 <div className='grid grid-cols-2 justify-items-center gap-20'>
-                    <div className="text-center w-[400px] h-[450px] ml-auto box-border1 boxclip">
-                        <div className='w-[390px] h-[440px] py-6 '>
+                    <div className="text-center w-[400px] h-[450px] ml-auto bg-[url('/border1.png')] bg-cover bg-no-repeat ">
+                        <div className='w-[390px] h-[440px] py-6 boxclip'>
                             <h1 className='text-4xl font-bold uppercase'>Game Testing</h1>
                             <p className='px-12 font-semibold mt-6'>Game testing, a subset of game development, is a software testing process for quality control of video games. The primary function of game testing is the discovery and documentation of software defects. Interactive entertainment software testing is a highly technical field requiring computing expertise, analytic competence, critical evaluation skills, and endurance.</p>
                         </div>
