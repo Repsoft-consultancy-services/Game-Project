@@ -14,13 +14,14 @@ const ServiceSlider = () => {
     const navigationPrevRef = useRef(null);
     const navigationNextRef = useRef(null);
     return (
-        <div>
-            <div className='relative z-10 mt-24 flex items-baseline space-x-3'>
+        <div className='mt-24'>
+            <h1 className='text-4xl lg:text-5xl text-center font-semibold'>Services Explained</h1>
+            <div className='relative z-10 flex items-baseline space-x-3'>
             <div ref={navigationPrevRef}>
                     <button className='btn rounded-full bg-black'><FaLessThan /></button>
                 </div>
                 <Swiper
-                    spaceBetween={0}
+                    spaceBetween={0}    
                     scrollbar={{
                         draggable: true,
                         dragSize: 50,

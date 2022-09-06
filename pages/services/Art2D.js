@@ -1,6 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import art2D from '../../public/art2D.png';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/scrollbar";
+import { Navigation, Scrollbar } from "swiper";
+import D21 from '../../public/D21.png'
+import D22 from '../../public/D22.png'
+import D23 from '../../public/D23.png'
 
 const Art2D = () => {
     return (
@@ -19,20 +27,74 @@ const Art2D = () => {
                 </div>
             </div>
             <div className=' mb-20'>
-                <div className='grid grid-cols-2 justify-items-center gap-20'>
-                    <div className="text-center w-[400px] h-[450px] border box-border1 py-6 ml-auto">
+                <div className='grid grid-cols-1 lg:grid-cols-3 justify-items-center justify-center gap-5'>
+                    <div className="text-center w-[400px] h-[450px] py-10 px-3 rounded-[20px] shadow-[4px_4px_25px_0px_rgba(0,0,0,0.15)]">
                         <h1 className='text-4xl font-bold uppercase'>CHARACTER DESIGN</h1>
                         <p className='px-12 font-semibold mt-6'>character design is the full creation of a character&apos;s aesthetic, personality, behavior, and overall visual appearance. This means that every aspect of a character such as shapes, color palettes, and details are chosen for a specific reason.</p>
                     </div>
-                    <div className='text-center w-[400px] h-[450px] border py-6 box-border2 mr-auto'>
+                    <div className='text-center w-[400px] h-[450px] bg-black text-white p-10 rounded-[20px]'>
                         <h1 className='text-4xl font-bold uppercase'>CONCEPT ART</h1>
                         <p className='px-12 font-semibold mt-6'>Concept art is a visual representation that tells a story or conveys a certain look. It is commonly used in film and video games to convey a vision and set the tone for an entire game or movie. Concept art provides a strong reference point that helps align the creatives working on the project.</p>
                     </div>
-                    <div className='text-center w-[400px] h-[450px] border py-6 box-border2 col-span-2'>
+                    <div className='text-center w-[400px] h-[450px] py-10 px-3 rounded-[20px] shadow-[4px_4px_25px_0px_rgba(0,0,0,0.15)]'>
                         <h1 className='text-4xl font-bold uppercase'>DIGITAL PAINT</h1>
                         <p className='px-12 font-semibold mt-6'>Digital painting is a relatively new but an already established art form. It’s a medium that typically combines a computer, a graphics tablet, and software of choice.</p>
                     </div>
                 </div>
+            </div>
+            <div className='mb-20'>
+                <h1 className='text-4xl lg:text-5xl text-center font-semibold mb-20'>Our 2D Work</h1>
+                <div className='h-auto'>
+                    <Swiper
+                        spaceBetween={0}
+                        scrollbar={{
+                            draggable: true,
+                            dragSize: 50,
+                            el: ".swiper-scrollbar"
+                        }}
+                        modules={[Navigation, Scrollbar]}
+                        // onBeforeInit={(swiper) => {
+                        //     swiper.params.navigation.prevEl = navigationPrevRef.current;
+                        //     swiper.params.navigation.nextEl = navigationNextRef.current;
+                        // }}
+                        // navigation={{
+                        //     prevEl: navigationPrevRef.current,
+                        //     nextEl: navigationNextRef.current,
+                        // }}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 1,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                            },
+                            1025: {
+                                slidesPerView: 3,
+                            },
+                            1440: {
+                                slidesPerView: 3,
+                            },
+                        }}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                            <div>
+                                    <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={D21} alt=""></Image>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div>
+                                <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={D22} alt=""></Image>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div>
+                                <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={D23} alt=""></Image>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+
             </div>
         </div>
     );

@@ -28,7 +28,7 @@ module.exports = {
       'xl': '1440px',
       // => Laptop M
 
-      '2xl': '1900px',
+      '2xl': '1920px',
       // => Laptop L
       
     }

@@ -1,31 +1,28 @@
 import Image from 'next/image';
 import React from 'react';
-import banner from '../../../public/valagents.png'
-import RDtext from '../../../public/RavendiseBanner.png'
+import RavendiseBanner from '../../../public/RavendiseBanner.png'
+import aboutBannerlg from '../../../public/aboutBannerlg.png'
+import aboutBannersm from '../../../public/aboutBannersm.png'
+import { BsArrowDown } from 'react-icons/bs'
 
 const Banner = () => {
     return (
-        <div className='mt-10 w-full lg:w-[50rem] xl:w-[80rem] 2xl:w-[100rem] 3xl:w-[150rem]'>
-            <div className='flex flex-col lg:flex-row items-center'>
-                <div className='flex-1 block lg:hidden px-14 lg:px-0'>
-                    <div className='flex 2xl:ml-10'>
-                        <Image src={RDtext} alt=""></Image>
+        <div className='mt-10 w-full text-black'>
+            <div className='flex flex-col lg:flex-row justify-between items-center '>
+                <div className='block lg:hidden px-10'>
+                    <Image src={aboutBannersm} alt=""></Image>
+                </div>
+                <div className='ml-0 lg:ml-32'>
+                    <h1 className='text-5xl first-letter:lg:text-6xl font-bold my-3 text-center lg:text-left'>WELCOME TO</h1>
+                    <div className='px-10 lg:px-0'>
+                        <Image src={RavendiseBanner} alt=""></Image>
+                    </div>
+                    <div className='flex justify-center lg:justify-start'>
+                        <button className='bg-black text-white text-center text-xs lg:text-lg normal-case px-12 py-5 rounded-[10px] mt-10 '><div className='flex justify-between items-center' > < BsArrowDown />Check Out</div></button>
                     </div>
                 </div>
-
-                <div className='flex-1 px-10 lg:px-0'>
-                    <div className='flex 2xl:ml-10'>
-                        <Image src={banner} alt=""></Image>
-                    </div>
-                </div>
-                <div className='flex-1'>
-                    <div className='hidden lg:block'>
-                        <Image src={RDtext} alt=""></Image>
-                    </div>
-                    <p className='text-base lg:text-2xl font-semibold ml-0 lg:ml-[6px] text-center lg:text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia qui odit cumque, neque placeat quae at amet expedita mollitia maxime, fugit dolorum debitis inventore voluptatibus. Non voluptatem dolorem quaerat quasi.</p>
-                    <div className='flex justify-center lg:justify-start ml-0 lg:ml-[6px]'>
-                        <button className='btn bg-black text-white text-lg normal-case px-10 rounded-md mt-10'>Get in Touch</button>
-                    </div>
+                <div className='hidden lg:block'>
+                    <Image src={aboutBannerlg} alt=""></Image>
                 </div>
             </div>
         </div>

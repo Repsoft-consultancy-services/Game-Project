@@ -11,7 +11,7 @@ const BannerSlider = () => {
     const navigationNextRef = useRef(null);
     return (
         <div>
-            <div className='relative z-10 mt-0 xl:-mt-24 flex items-center space-x-3 h-[20rem]'>
+            <div className='relative z-10 mt-0 xl:-mt-72 flex items-center space-x-3 h-[20rem]'>
                 <div ref={navigationPrevRef} >
                     <button className=''><FaLessThan className='text-black' /></button>
                 </div>
@@ -73,7 +73,7 @@ const BannerSlider = () => {
                     </SwiperSlide>
                 </Swiper>
                 <div ref={navigationNextRef}>
-                    <button className=''><FaGreaterThan className='text-black' /></button>
+                    <button className=''><FaGreaterThan className='text-white' /></button>
                 </div>
             </div>
             {/* <div className='flex justify-center'>
