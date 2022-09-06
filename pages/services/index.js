@@ -9,7 +9,7 @@ import SoftwareDevelopment from './SoftwareDevelopment';
 
 const index = () => {
     return (
-        <div>
+        <div className='text-black'>
             <Navbar></Navbar>
             <Banner></Banner>
             <ServiceSlider></ServiceSlider>

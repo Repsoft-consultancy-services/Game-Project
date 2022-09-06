@@ -1,8 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/scrollbar";
+import { Navigation, Scrollbar } from "swiper";
 import QualityAssurance from '../../public/QualityAssurance.png';
-import QualityAssurancefig from '../../public/QualityAssurancefig.png';
-import Link from 'next/link';
+import control from '../../public/control.png'
+import tombraider from '../../public/tombraider.png'
+import nfsheat from '../../public/nfsheat.png'
+
+
 const Quality = () => {
     return (
         <div>
@@ -14,31 +22,81 @@ const Quality = () => {
                 </div>
                 <div className='flex-1 text-center md:text-right px-10 md:px-0'>
                     <h2 className='text-2xl lg:text-6xl uppercase font-bold'>QUALITY <br /> ASSURANCE</h2>
-                    <div className='mt-8 mb-10 font-bold text-xl'>
+                    <div className='mt-8 mb-10 font-semibold text-xl'>
                         Ravendise is a community of software testers who are passionate about quality and love to test. We develop an in-depth understanding of the applications under test and include software testing strategies that deliver quantifiable results.
                     </div>
-
                 </div>
             </div>
-            <div className=' mb-20'>
+            <div className='mb-20'>
                 <div className='grid grid-cols-2 justify-items-center gap-20'>
-                    <div className="text-center w-[400px] h-[450px] ml-auto bg-[url('/border1.png')] bg-cover bg-no-repeat ">
-                        <div className='w-[390px] h-[440px] py-6 boxclip'>
+                    <div className="text-center w-[400px] h-[450px] ml-auto bg-black text-white p-10 rounded-[20px]">
+                        <div className=''>
                             <h1 className='text-4xl font-bold uppercase'>Game Testing</h1>
-                            <p className='px-12 font-semibold mt-6'>Game testing, a subset of game development, is a software testing process for quality control of video games. The primary function of game testing is the discovery and documentation of software defects. Interactive entertainment software testing is a highly technical field requiring computing expertise, analytic competence, critical evaluation skills, and endurance.</p>
+                            <p className='font-semibold mt-6'>Game testing, a subset of game development, is a software testing process for quality control of video games. The primary function of game testing is the discovery and documentation of software defects. Interactive entertainment software testing is a highly technical field requiring computing expertise, analytic competence, critical evaluation skills, and <br /> endurance.</p>
                         </div>
                     </div>
-                    <div className="text-center w-[400px] h-[450px] bg-[url('/border2.png')] bg-no-repeat bg-cover mr-auto">
-                        <div className='w-[400px] h-[450px] py-6'>
+                    <div className="text-center w-[400px] h-[450px] mr-auto py-10 rounded-[20px] shadow-[4px_4px_25px_0px_rgba(0,0,0,0.15)]">
+                        <div className=''>
                             <h1 className='text-4xl font-bold uppercase'>Software Testing</h1>
-                            <p className='px-12 font-semibold mt-6'>Software testing is the act of examining the artifacts and the behavior of the software under test by validation and verification. Software testing can also provide an objective, independent view of the software to allow the business to appreciate and understand the risks of software implementation. </p>
+                            <p className='px-12 font-semibold mt-6'>Software testing is the act of examining the artifacts and the behavior of the software under test by validation and verification. Software testing can also provide an objective, independent view of the software to allow the business to appreciate and understand<br /> the  risks of software <br /> implementation. </p>
                         </div>
-
                     </div>
-                    <div className='col-span-2'><Image src={QualityAssurancefig} alt=""></Image></div>
                 </div>
             </div>
+            <div className='mb-20'>
+                <h1 className='text-4xl lg:text-5xl text-center font-semibold mb-20'>Our Tested Games</h1>
+                <div className='h-auto'>
+                    <Swiper
+                        spaceBetween={0}
+                        scrollbar={{
+                            draggable: true,
+                            dragSize: 50,
+                            el: ".swiper-scrollbar"
+                        }}
+                        modules={[Navigation, Scrollbar]}
+                        // onBeforeInit={(swiper) => {
+                        //     swiper.params.navigation.prevEl = navigationPrevRef.current;
+                        //     swiper.params.navigation.nextEl = navigationNextRef.current;
+                        // }}
+                        // navigation={{
+                        //     prevEl: navigationPrevRef.current,
+                        //     nextEl: navigationNextRef.current,
+                        // }}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 1,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                            },
+                            1025: {
+                                slidesPerView: 3,
+                            },
+                            1440: {
+                                slidesPerView: 3,
+                            },
+                        }}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                            <div>
+                                    <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={control} alt=""></Image>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div>
+                                <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={tombraider} alt=""></Image>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div>
+                                <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={nfsheat} alt=""></Image>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
 
+            </div>
         </div>
     );
 };

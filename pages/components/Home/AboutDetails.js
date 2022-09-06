@@ -11,7 +11,7 @@ const AboutDetails = () => {
                     <p className='text-base lg:text-2xl mt-10 font-semibold text-center lg:text-left px-16 lg:px-0'>How is Ravendise different? Our team of industry professionals, based offshore
                         in India and onshore in the US and Sweden,collaborate throughout the
                         development process toreduce turn-around time and client costs, while
-                        delivering a greater volume of high quality content.
+                        delivering a greater volume of high quality content. <br /> <br />
 
                         Whether a high volume of content on a tight schedule, or the generation of
                         specific assets that requires dedicated attention, we understand the issues that
