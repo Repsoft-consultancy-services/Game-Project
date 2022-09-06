@@ -27,16 +27,16 @@ const Art3D = () => {
                 </div>
             </div>
             <div className='mb-20'>
-                <div className='grid grid-cols-3 justify-items-center gap-20'>
-                    <div className='text-center w-[400px] h-[450px] py-10 px-3 rounded-[20px] shadow-[4px_4px_25px_0px_rgba(0,0,0,0.15)]'>
+                <div className='grid grid-cols-1 lg:grid-cols-3 justify-items-center gap-0 lg:gap-5'>
+                    <div className='text-center py-10 px-3 rounded-[20px] shadow-[4px_4px_25px_0px_rgba(0,0,0,0.15)] mb-5 lg:mb-0'>
                         <h1 className='text-4xl font-bold uppercase'>CHARACTER DESIGN</h1>
                         <p className='px-12 font-semibold mt-6'>character design is the full creation of a character&apos;s aesthetic, personality, behavior, and overall visual appearance. This means that every aspect of a character such as shapes, color palettes, and details are chosen for a specific reason.</p>
                     </div>
-                    <div className='text-center w-[400px] h-[450px] bg-black text-white p-10 rounded-[20px]'>
+                    <div className='text-center  bg-black text-white pt-10 pb-5 rounded-[20px] mb-5 lg:mb-0'>
                         <h1 className='text-4xl font-bold uppercase'>ENVIROMENT DESIGN</h1>
                         <p className='px-12 font-semibold mt-6'>A 3D environment is a computer-controlled digital setting created with the illusion of depth. It can be both an outdoor and indoor location, from which you can get visually specific sensations.</p>
                     </div>
-                    <div className='text-center w-[400px] h-[450px] py-10 px-3 rounded-[20px] shadow-[4px_4px_25px_0px_rgba(0,0,0,0.15)]'>
+                    <div className='text-center py-10 px-3 rounded-[20px] shadow-[4px_4px_25px_0px_rgba(0,0,0,0.15)] mb-5 lg:mb-0'>
                         <h1 className='text-4xl font-bold uppercase'>ASSET MODELING</h1>
                         <p className='px-12 font-semibold mt-6'>A game asset is a character or an object that&apos;s meant to appear in a video game. </p>
                     </div>
@@ -44,7 +44,12 @@ const Art3D = () => {
             </div>
             <div className='mb-20'>
                 <h1 className='text-4xl lg:text-5xl text-center font-semibold mb-20'>Our 3D Work</h1>
-                <div className='h-auto'>
+                <div className='flex flex-col lg:flex-row justify-evenly'>
+                    <div><Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={D31} alt=""></Image></div>
+                    <div><Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={D32} alt=""></Image></div>
+                    <div><Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={D33} alt=""></Image></div>
+                </div>
+                {/* <div className='h-auto'>
                     <Swiper
                         spaceBetween={0}
                         scrollbar={{
@@ -79,21 +84,21 @@ const Art3D = () => {
                     >
                         <SwiperSlide>
                             <div>
-                                    <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={D31} alt=""></Image>
+                                    <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)] mb-5 lg:mb-0' height={281} width={409} src={D31} alt=""></Image>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div>
-                                <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={D32} alt=""></Image>
+                                <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)] mb-5 lg:mb-0' height={281} width={409} src={D32} alt=""></Image>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div>
-                                <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={D33} alt=""></Image>
+                                <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)] mb-5 lg:mb-0' height={281} width={409} src={D33} alt=""></Image>
                             </div>
                         </SwiperSlide>
                     </Swiper>
-                </div>
+                </div> */}
 
             </div>
         </div>

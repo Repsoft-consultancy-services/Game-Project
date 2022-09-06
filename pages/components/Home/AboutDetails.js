@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import cat from '../../../public/catface.png'
 
@@ -18,7 +19,7 @@ const AboutDetails = () => {
                         arise in the development process.
                     </p>
                     <div className='mt-16'>
-                        <button className='btn bg-black text-white text-lg normal-case px-10 rounded-md'>About Us</button>
+                        <Link href='/aboutUs'><button className='btn bg-black text-white text-lg normal-case px-10 rounded-md'>About Us</button></Link>
                     </div>
                 </div>
                 <div className='flex-1 hidden md:block'>

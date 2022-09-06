@@ -28,24 +28,29 @@ const GraphicDesign = () => {
                 </div>
             </div>
             <div className=' mb-20'>
-                <div className='grid grid-cols-3 justify-items-center gap-20'>
-                    <div className='text-center w-[400px] h-[450px] py-10 px-3 rounded-[20px] shadow-[4px_4px_25px_0px_rgba(0,0,0,0.15)]'>
+                <div className='grid grid-cols-1 lg:grid-cols-3 justify-items-center gap-0 lg:gap-5'>
+                    <div className='text-center py-10 px-3 rounded-[20px] shadow-[4px_4px_25px_0px_rgba(0,0,0,0.15)] mb-5 lg:mb-0'>
                         <h1 className='text-4xl font-bold uppercase'>Web Development</h1>
-                        <p className='px-12 font-semibold mt-6'>At Ravendise, we professionally design, redesign and continuously support customer-facing and enterprise web apps to achieve high conversion and adoption rates.</p>
+                        <p className='lg:px-12 font-semibold mt-6'>At Ravendise, we professionally design, redesign and continuously support customer-facing and enterprise web apps to achieve high conversion and adoption rates.</p>
                     </div>
-                    <div className='text-center w-[400px] h-[450px] bg-black text-white pt-10 px-5 rounded-[20px]'>
+                    <div className='text-center bg-black text-white pt-10 pb-5 px-5 rounded-[20px] mb-5 lg:mb-0'>
                         <h1 className='text-4xl font-bold uppercase'>App Development</h1>
-                        <p className='px-12 font-semibold mt-6'>We offer a full cycle of application design, integration and management services. Whether it is a consumer oriented app or a transformative enterprise-class solution, the company leads the entire mobile app development process from ideation and concept to delivery, and to ongoing ongoing support.</p>
+                        <p className='lg:px-12 font-semibold mt-6'>We offer a full cycle of application design, integration and management services. Whether it is a consumer oriented app or a transformative enterprise-class solution, the company leads the entire mobile app development process from ideation and concept to delivery, and to ongoing ongoing support.</p>
                     </div>
-                    <div className='text-center w-[400px] h-[450px] py-10 px-3 rounded-[20px] shadow-[4px_4px_25px_0px_rgba(0,0,0,0.15)]'>
+                    <div className='text-center py-10 px-3 rounded-[20px] shadow-[4px_4px_25px_0px_rgba(0,0,0,0.15)] mb-5 lg:mb-0'>
                         <h1 className='text-4xl font-bold uppercase'>Game Development</h1>
-                        <p className='px-12 font-semibold mt-6'>Our video game development company runs independent projects, jointly creates games with the client and provides additional operational services. Expertise of our team allows us to cover all gaming platforms and develop an amazing product that matches the customer&apos;s vision and players preferences.</p>
+                        <p className='lg:px-12 font-semibold mt-6'>Our video game development company runs independent projects, jointly creates games with the client and provides additional operational services. Expertise of our team allows us to cover all gaming platforms and develop an amazing product that matches the customer&apos;s vision and players preferences.</p>
                     </div>
                 </div>
             </div>
             <div className='mb-20'>
-                <h1 className='text-4xl lg:text-5xl text-center font-semibold mb-20'>Our Graphic Design Work</h1>
-                <div className='h-auto'>
+                <h1 className='text-4xl lg:text-5xl text-center font-semibold mb-5 lg:mb-20'>Our Graphic Design Work</h1>
+                <div className='flex flex-col lg:flex-row justify-evenly'>
+                    <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={GD1} alt=""></Image>
+                    <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={GD2} alt=""></Image>
+                    <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={GD3} alt=""></Image>
+                </div>
+                {/* <div className='h-auto'>
                     <Swiper
                         spaceBetween={0}
                         scrollbar={{
@@ -83,21 +88,21 @@ const GraphicDesign = () => {
                     >
                         <SwiperSlide>
                             <div>
-                                    <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={GD1} alt=""></Image>
+                                    <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)] mb-5 lg:mb-0' height={281} width={409} src={GD1} alt=""></Image>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div>
-                                <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={GD2} alt=""></Image>
+                                <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)] mb-5 lg:mb-0' height={281} width={409} src={GD2} alt=""></Image>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div>
-                                <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={GD3} alt=""></Image>
+                                <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)] mb-5 lg:mb-0' height={281} width={409} src={GD3} alt=""></Image>
                             </div>
                         </SwiperSlide>
                     </Swiper>
-                </div>
+                </div> */}
 
             </div>
         </div>

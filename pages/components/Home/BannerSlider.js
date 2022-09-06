@@ -11,7 +11,7 @@ const BannerSlider = () => {
     const navigationNextRef = useRef(null);
     return (
         <div>
-            <div className='relative z-10 mt-0 xl:-mt-72 flex items-center space-x-3 h-[20rem]'>
+            <div className='relative z-50 mt-0 xl:-mt-64 flex items-center space-x-3 h-[20rem]'>
                 <div ref={navigationPrevRef} >
                     <button className=''><FaLessThan className='text-black' /></button>
                 </div>
@@ -48,27 +48,23 @@ const BannerSlider = () => {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <div className='h-[204px] w-[297px] bg-white text-center rounded-[5px] shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
+                        <div className=' bg-white'>
+                            <iframe width="297" height="170" src="https://www.youtube.com/embed/lcmKphUoteE?controls=0" title="YouTube video player" className='rounded-[5px] shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]' allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='h-[204px] w-[297px] bg-white text-center rounded-[5px] shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
+                        <div className='bg-white'>
+                            <iframe width="297" height="170" src="https://www.youtube.com/embed/6yX3pAElNNE?controls=0" title="YouTube video player" className='rounded-[5px] shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]' allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='h-[204px] w-[297px] bg-white text-center rounded-[5px] shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
+                        <div className='bg-white'>
+                            <iframe width="297" height="170" src="https://www.youtube.com/embed/eTQS90TTaHw?controls=0" title="YouTube video player" className='rounded-[5px] shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]' allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='h-[204px] w-[297px] bg-white text-center rounded-[5px] shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='h-[204px] w-[297px] bg-white text-center rounded-[5px] shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='h-[204px] w-[297px] bg-white text-center rounded-[5px] shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
+                        <div className='bg-white'>
+                            <iframe width="297" height="170" src="https://www.youtube.com/embed/ClmUwfnJIB4?controls=0" title="YouTube video player" className='rounded-[5px] shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]' allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     </SwiperSlide>
                 </Swiper>

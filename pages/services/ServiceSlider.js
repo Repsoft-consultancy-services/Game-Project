@@ -16,17 +16,12 @@ const ServiceSlider = () => {
     return (
         <div className='mt-24'>
             <h1 className='text-4xl lg:text-5xl text-center font-semibold'>Services Explained</h1>
-            <div className='relative z-10 flex items-baseline space-x-3'>
-            <div ref={navigationPrevRef}>
-                    <button className='btn rounded-full bg-black'><FaLessThan /></button>
+            <div className='relative z-10 flex items-baseline space-x-3 h-[180rem] lg:h-auto'>
+                <div ref={navigationPrevRef}>
+                    <button className='btn text-xs lg:text-base rounded-full bg-black'><FaLessThan /></button>
                 </div>
                 <Swiper
-                    spaceBetween={0}    
-                    scrollbar={{
-                        draggable: true,
-                        dragSize: 50,
-                        el: ".swiper-scrollbar"
-                    }}
+                    spaceBetween={10}
                     modules={[Navigation]}
                     onBeforeInit={(swiper) => {
                         swiper.params.navigation.prevEl = navigationPrevRef.current;
@@ -56,7 +51,7 @@ const ServiceSlider = () => {
                     </SwiperSlide>
                 </Swiper>
                 <div ref={navigationNextRef}>
-                    <button className='btn rounded-full bg-black'><FaGreaterThan /></button>
+                    <button className='btn text-xs lg:text-base rounded-full bg-black'><FaGreaterThan /></button>
                 </div>
             </div>
         </div>
