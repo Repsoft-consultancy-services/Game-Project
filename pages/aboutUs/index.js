@@ -7,10 +7,8 @@ import Waw from './Waw';
 const index = () => {
     return (
         <>
-        <Navbar></Navbar>
         <Banner></Banner>
         <Waw></Waw>
-        <Footer></Footer>
         </>
     );
 };

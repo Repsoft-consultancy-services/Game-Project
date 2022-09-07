@@ -17,8 +17,11 @@ const ServiceSlider = () => {
         <div className='mt-24'>
             <h1 className='text-4xl lg:text-5xl text-center font-semibold'>Services Explained</h1>
             <div className='relative z-10 flex items-baseline space-x-3 h-[180rem] lg:h-auto'>
-                <div ref={navigationPrevRef}>
+                <div ref={navigationPrevRef} className="order-1">
                     <button className='btn text-xs lg:text-base rounded-full bg-black'><FaLessThan /></button>
+                </div>
+                <div ref={navigationNextRef} className="order-3">
+                    <button className='btn text-xs lg:text-base rounded-full bg-black'><FaGreaterThan /></button>
                 </div>
                 <Swiper
                     spaceBetween={10}
@@ -32,7 +35,7 @@ const ServiceSlider = () => {
                         nextEl: navigationNextRef.current,
                     }}
                     slidesPerView={1}
-                    className="mySwiper"
+                    className="mySwiper order-2"
                 >
                     <SwiperSlide>
                         <Quality></Quality>
@@ -50,9 +53,7 @@ const ServiceSlider = () => {
                         <SoftwareDevelopment></SoftwareDevelopment>
                     </SwiperSlide>
                 </Swiper>
-                <div ref={navigationNextRef}>
-                    <button className='btn text-xs lg:text-base rounded-full bg-black'><FaGreaterThan /></button>
-                </div>
+                
             </div>
         </div>
     );
