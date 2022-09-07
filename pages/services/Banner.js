@@ -1,13 +1,23 @@
+import Image from 'next/image';
 import React from 'react';
+import SB from '../../public/servicesbanner.png'
+import SBsm from '../../public/servicesbannersm.png'
 
 const Banner = () => {
     return (
-        <div className="w-full text-black bg-[url('/servicesbanner.png')] bg-no-repeat bg-cover">
-            <div className='flex justify-start items-center py-52 xl:py-72 2xl:py-[600px]'>
-                <div className='ml-0 lg:ml-32'>
-                    <h1 className='text-5xl lg:text-[64px] font-bold text-left'>OUR<br />SERVICES</h1>
-                    <p className='text-2xl font-medium'>Lorem Ipsum is simply dummy text <br /> of the printing and typesetting <br /> industry. Lorem Ipsum has been the <br /> industry&apos;s</p>
+        <div className="w-full text-black">
+            <div className='flex flex-col lg:flex-row-reverse lg:justify-between items-center'>
+                <div className='hidden lg:block'>
+                    <Image src={SB} alt=""></Image>
                 </div>
+                <div className='block lg:hidden'>
+                    <Image src={SBsm} alt=""></Image>
+                </div>
+                <div className='ml-0 lg:ml-20 text-center lg:text-left'>
+                    <h1 className='text-5xl lg:text-[64px] font-bold'>OUR<br />SERVICES</h1>
+                    <p className='text-2xl lg:font-medium'>Ravendise specialises in all services from design to development. <br /> We cover all the important areas with our inhouse team that is <br /> professionalised in their own areas</p>
+                </div>
+
             </div>
         </div>
     );

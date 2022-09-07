@@ -27,16 +27,16 @@ const SoftwareDevelopment = () => {
                 </div>
             </div>
             <div className=' mb-20'>
-                <div className='grid grid-cols-3 justify-items-center gap-20'>
-                    <div className='text-center w-[400px] h-[450px] py-10 px-3 rounded-[20px] shadow-[4px_4px_25px_0px_rgba(0,0,0,0.15)]'>
+                <div className='grid grid-cols-1 lg:grid-cols-3 justify-items-center gap-0 lg:gap-5'>
+                    <div className='text-center py-10 px-3 rounded-[20px] shadow-[4px_4px_25px_0px_rgba(0,0,0,0.15)] mb-5 lg:mb-0'>
                         <h1 className='text-4xl font-bold uppercase'>MOTION GRAPHICS</h1>
                         <p className='px-12 font-semibold mt-6'>Motion graphics is animation, but with text as a major component. Essentially, it’s animated graphic design.</p>
                     </div>
-                    <div className='text-center w-[400px] h-[450px] bg-black text-white pt-10 rounded-[20px]'>
+                    <div className='text-center  bg-black text-white pt-10 pb-5 rounded-[20px] mb-5 lg:mb-0'>
                         <h1 className='text-4xl font-bold uppercase'>UI / UX DESIGN</h1>
                         <p className='px-12 font-semibold mt-6'>The user interface is the graphical layout of an application. It consists of the buttons users click on, the text they read, the images, sliders, text entry fields, and all the rest of the items the user interacts with. This includes screen layout, transitions, interface animations and every single micro-interaction. Any sort of visual element, interaction, or animation must all be designed.</p>
                     </div>
-                    <div className='text-center w-[400px] h-[450px] py-10 px-3 rounded-[20px] shadow-[4px_4px_25px_0px_rgba(0,0,0,0.15)]'>
+                    <div className='text-center  py-10 px-3 rounded-[20px] shadow-[4px_4px_25px_0px_rgba(0,0,0,0.15)] mb-5 lg:mb-0'>
                         <h1 className='text-4xl font-bold uppercase'>BRANDING</h1>
                         <p className='px-12 font-semibold mt-6'> Branding is one of those marketing concepts that are a bit vague and can quickly become confusing, even for people who have studied marketing.</p>
                     </div>
@@ -44,7 +44,12 @@ const SoftwareDevelopment = () => {
             </div>
             <div className='mb-20'>
                 <h1 className='text-4xl lg:text-5xl text-center font-semibold mb-20'>Our projects</h1>
-                <div className='h-auto'>
+                <div className='flex flex-col lg:flex-row justify-evenly'>
+                    <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={SD1} alt=""></Image>
+                    <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={SD2} alt=""></Image>
+                    <Image className='rounded-[7px] shadow-[3px_5px_34px_0_rgba(0,0,0,0.15)]' height={281} width={409} src={SD3} alt=""></Image>
+                </div>
+                {/* <div className='h-auto'>
                     <Swiper
                         spaceBetween={0}
                         scrollbar={{
@@ -93,7 +98,7 @@ const SoftwareDevelopment = () => {
                             </div>
                         </SwiperSlide>
                     </Swiper>
-                </div>
+                </div> */}
 
             </div>
         </div>

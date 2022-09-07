@@ -2,28 +2,71 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import RD from '../../../public/RD-logo-Black.png'
-import { AiOutlineInstagram, AiFillYoutube } from 'react-icons/ai';
-import { FaDiscord } from 'react-icons/fa';
+import { AiOutlineInstagram, AiFillYoutube, AiFillLinkedin } from 'react-icons/ai';
+import { FaDiscord, FaTwitter } from 'react-icons/fa';
 import { CgMenuLeft } from 'react-icons/cg';
 import { IoIosArrowUp } from 'react-icons/io';
 
 const Navbar = () => {
     const [servicedrop, setServicedrop] = useState(false)
+    const [home, setHome] = useState(false)
+    const [service, setService] = useState(false)
+    const [contact, setContact] = useState(false)
+    const [join, setJoin] = useState(false)
+    const [about, setAbout] = useState(false)
     const handledropdown = () => {
         if (!servicedrop)
             setServicedrop(true)
         else
             setServicedrop(false)
     }
-    console.log(servicedrop);
+    const handlehome = ()=>{
+        setHome(true)
+        setContact(false)
+        setJoin(false)
+        setAbout(false)
+        setService(false)
+    }
+    const handlecontact = ()=>{
+        setHome(false)
+        setContact(true)
+        setJoin(false)
+        setAbout(false)
+        setService(false)
+    }
+    const handleabout = ()=>{
+        setHome(false)
+        setContact(false)
+        setJoin(false)
+        setAbout(true)
+        setService(false)
+    }
+    const handlejoin = ()=>{
+        setHome(false)
+        setContact(false)
+        setJoin(true)
+        setAbout(false)
+        setService(false)
+    }
+    const handleservice = ()=>{
+        setHome(false)
+        setContact(false)
+        setJoin(false)
+        setAbout(false)
+        setService(true)
+    }
+    
     const menu = <>
-        <li><Link href='/'><p className='bg-white'>Home</p></Link></li>
-        <li onClick={handledropdown}>
-            <p className='bg-white'>Services</p>
+        <li onClick={handlehome}><Link href='/'><p className={`bg-white ${home? 'font-bold':'font-normal'}`}>Home</p></Link></li>
+        <li onClick={()=>{
+            handledropdown()
+            handleservice()
+        }}>
+            <p className={`bg-white ${service? 'font-bold':'font-normal'}`}>Services</p>
         </li>
-        <li><Link href='/contactUs'><p className='bg-white'>Contact Us</p></Link></li>
-        <li><Link href='/joinUs'><p className='bg-white'>Join Us</p></Link></li>
-        <li><Link href='/aboutUs'><p className='bg-white'>About Us</p></Link></li>
+        <li onClick={handlecontact}><Link href='/contactUs'><p className={`bg-white ${contact? 'font-bold':'font-normal'}`}>Contact Us</p></Link></li>
+        <li onClick={handlejoin}><Link href='/joinUs'><p className={`bg-white ${join? 'font-bold':'font-normal'}`}>Join Us</p></Link></li>
+        <li onClick={handleabout}><Link href='/aboutUs'><p className={`bg-white ${about? 'font-bold':'font-normal'}`}>About Us</p></Link></li>
     </>
     return (
         <div>
@@ -42,9 +85,11 @@ const Navbar = () => {
                      rounded-md w-52 bg-white">
                             {menu}
                             <div className='flex ml-3 mt-2 space-x-3 text-3xl'>
-                                <Link href=""><AiOutlineInstagram /></Link>
-                                <Link href=""><FaDiscord /></Link>
-                                <Link href=""><AiFillYoutube /></Link>
+                                <Link href="https://www.instagram.com/ravendise_official/"><AiOutlineInstagram /></Link>
+                                <Link href="https://discord.gg/Z2F4uPHngD"><FaDiscord /></Link>
+                                <Link href="https://youtube.com/channel/UC02Leyeh-kCL-OcnP4vGV1g"><AiFillYoutube /></Link>
+                                <Link href="https://twitter.com/RavendiseStudio"><FaTwitter /></Link>
+                                <Link href="https://www.linkedin.com/company/ravendise/"><AiFillLinkedin /></Link>
                             </div>
                         </ul>
                     </div>
@@ -62,9 +107,11 @@ const Navbar = () => {
 
                 <div className="justify-end w-1/3 ">
                     <div className='hidden lg:flex mr-5 xl:mr-16 space-x-8 text-3xl'>
-                        <Link href=""><AiOutlineInstagram /></Link>
-                        <Link href=""><FaDiscord /></Link>
-                        <Link href=""><AiFillYoutube /></Link>
+                        <Link target="_blank" href="https://www.instagram.com/ravendise_official/"><AiOutlineInstagram className='hover:cursor-pointer' /></Link>
+                        <Link target="_blank" href="https://discord.gg/Z2F4uPHngD"><FaDiscord className='hover:cursor-pointer' /></Link>
+                        <Link target="_blank" href="https://youtube.com/channel/UC02Leyeh-kCL-OcnP4vGV1g"><AiFillYoutube className='hover:cursor-pointer' /></Link>
+                        <Link target="_blank" href="https://twitter.com/RavendiseStudio"><FaTwitter  className='hover:cursor-pointer'/></Link>
+                        <Link target="_blank" href="https://www.linkedin.com/company/ravendise/"><AiFillLinkedin  className='hover:cursor-pointer'/></Link>
                     </div>
                 </div>
             </div>

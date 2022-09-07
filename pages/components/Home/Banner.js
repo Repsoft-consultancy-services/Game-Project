@@ -7,7 +7,7 @@ import { BsArrowDown } from 'react-icons/bs'
 
 const Banner = () => {
     return (
-        <div className='mt-10 w-full text-black'>
+        <div className='w-full text-black'>
             <div className='flex flex-col lg:flex-row justify-between items-center '>
                 <div className='block lg:hidden px-10'>
                     <Image src={aboutBannersm} alt=""></Image>
