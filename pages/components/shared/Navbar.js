@@ -9,7 +9,7 @@ import { IoIosArrowUp } from 'react-icons/io';
 
 const Navbar = () => {
     const [servicedrop, setServicedrop] = useState(false)
-    const [home, setHome] = useState(false)
+    const [home, setHome] = useState(true)
     const [service, setService] = useState(false)
     const [contact, setContact] = useState(false)
     const [join, setJoin] = useState(false)

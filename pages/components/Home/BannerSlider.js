@@ -12,8 +12,11 @@ const BannerSlider = () => {
     return (
         <div>
             <div className='relative z-50 mt-0 xl:-mt-64 flex items-center space-x-3 h-[20rem]'>
-                <div ref={navigationPrevRef} >
+                <div ref={navigationPrevRef} className="order-1">
                     <button className=''><FaLessThan className='text-black' /></button>
+                </div>
+                <div ref={navigationNextRef} className="order-3">
+                    <button className=''><FaGreaterThan className='text-white' /></button>
                 </div>
                 <Swiper
                     spaceBetween={0}
@@ -46,7 +49,7 @@ const BannerSlider = () => {
                             slidesPerView: 4,
                         },
                     }}
-                    className="mySwiper"
+                    className="mySwiper order-2"
                 >
                     <SwiperSlide>
                         <div className=' bg-white'>
@@ -69,9 +72,6 @@ const BannerSlider = () => {
                         </div>
                     </SwiperSlide>
                 </Swiper>
-                <div ref={navigationNextRef}>
-                    <button className=''><FaGreaterThan className='text-white' /></button>
-                </div>
             </div>
             {/* <div className='flex justify-center'>
                 <div className="swiper-scrollbar"></div>
