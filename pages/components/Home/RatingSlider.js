@@ -50,7 +50,6 @@ const RatingSlider = () => {
                                 <StarRatings
                                     rating={5}
                                     starRatedColor="black"
-                                    changeRating={false}
                                     numberOfStars={5}
                                     name='rating'
                                     starDimension="24px"
@@ -74,7 +73,6 @@ const RatingSlider = () => {
                                 <StarRatings
                                     rating={5}
                                     starRatedColor="black"
-                                    changeRating={false}
                                     numberOfStars={5}
                                     name='rating'
                                     starDimension="24px"
@@ -98,7 +96,6 @@ const RatingSlider = () => {
                                 <StarRatings
                                     rating={5}
                                     starRatedColor="black"
-                                    changeRating={false}
                                     numberOfStars={5}
                                     name='rating'
                                     starDimension="24px"
@@ -121,7 +118,6 @@ const RatingSlider = () => {
                             <StarRatings
                                 rating={5}
                                 starRatedColor="black"
-                                changeRating={false}
                                 numberOfStars={5}
                                 name='rating'
                                 starDimension="24px"
@@ -143,7 +139,6 @@ const RatingSlider = () => {
                             <StarRatings
                                 rating={5}
                                 starRatedColor="black"
-                                changeRating={false}
                                 numberOfStars={5}
                                 name='rating'
                                 starDimension="24px"
@@ -165,7 +160,6 @@ const RatingSlider = () => {
                             <StarRatings
                                 rating={5}
                                 starRatedColor="black"
-                                changeRating={false}
                                 numberOfStars={5}
                                 name='rating'
                                 starDimension="24px"
@@ -187,7 +181,6 @@ const RatingSlider = () => {
                             <StarRatings
                                 rating={5}
                                 starRatedColor="black"
-                                changeRating={false}
                                 numberOfStars={5}
                                 name='rating'
                                 starDimension="24px"
@@ -209,7 +202,6 @@ const RatingSlider = () => {
                             <StarRatings
                                 rating={5}
                                 starRatedColor="black"
-                                changeRating={false}
                                 numberOfStars={5}
                                 name='rating'
                                 starDimension="24px"
@@ -231,7 +223,6 @@ const RatingSlider = () => {
                             <StarRatings
                                 rating={5}
                                 starRatedColor="black"
-                                changeRating={false}
                                 numberOfStars={5}
                                 name='rating'
                                 starDimension="24px"
