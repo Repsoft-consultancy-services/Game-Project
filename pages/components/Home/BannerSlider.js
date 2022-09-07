@@ -17,6 +17,7 @@ const BannerSlider = () => {
                 </div>
                 <Swiper
                     spaceBetween={0}
+                    loop={true}
                     scrollbar={{
                         draggable: true,
                         dragSize: 50,
