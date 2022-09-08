@@ -7,12 +7,12 @@ const Waw = () => {
         <div className='w-full text-black'>
             <div className='my-20 '>
                 <h1 className='text-center text-3xl underline font-semibold' >Who are we?</h1>
-                <div className='flex mt-16'>
-                    <div className='flex-1 hidden lg:block'>
+                <div className='flex flex-row-reverse mt-16'>
+                    <div className='hidden lg:block'>
                         <Image src={spoidor} alt=""></Image>
                     </div>
-                    <div className='flex-1 px-5'>
-                        <p className='text-2xl text-center lg:text-right font-semibold'>For Studios and Publishers, traditional outsourcing models have proven costly,
+                    <div className='flex-1'>
+                        <p className='text-2xl font-semibold'>For Studios and Publishers, traditional outsourcing models have proven costly,
                             often requiring more supervision and resources than expected to achieve quality
                             return on the investment made. <br /><br />
 

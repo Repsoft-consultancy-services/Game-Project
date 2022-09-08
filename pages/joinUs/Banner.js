@@ -59,7 +59,7 @@ const Banner = () => {
                         <p>Want to join the most creative and sharp minds out there? You have come to right place. Send us your resume so you can be the part of our team.</p>
                     </div>
                     <div>
-                        <button className='bg-black text-white text-center text-xs lg:text-lg normal-case px-9 lg:px-12 py-4 lg:py-5 rounded-[10px] mt-10 '>Look for open positions</button>
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/ravendise/"><button className='bg-black text-white text-center text-xs lg:text-lg normal-case px-9 lg:px-12 py-4 lg:py-5 rounded-[10px] mt-10 '>Look for open positions</button></a>
                     </div>
                 </div>
                 <div className='hidden lg:block'>

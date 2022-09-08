@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import HomeStart from './components/Home/HomeStart'
-import Footer from './components/shared/Footer'
-import Navbar from './components/shared/Navbar'
+import { ToastContainer, toast } from 'react-toastify';
 
 export default function Home() {
   return (
@@ -12,6 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HomeStart></HomeStart>
+      <ToastContainer />
     </div>
   )
 }
