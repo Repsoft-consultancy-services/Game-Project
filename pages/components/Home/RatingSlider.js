@@ -6,7 +6,6 @@ import { FaLessThan, FaGreaterThan } from 'react-icons/fa'
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
-import user from '../../../public/user.png'
 import Image from 'next/image';
 
 const RatingSlider = () => {
