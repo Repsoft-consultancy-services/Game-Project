@@ -56,7 +56,7 @@ const Banner = () => {
                         <h1 className='text-4xl lg:text-6xl font-bold uppercase'>join our team</h1>
                     </div>
                     <div className='text-base lg:text-2xl'>
-                        <p>Lorem Ipsum is simply dummy text <br /> of the printing and typesetting <br />  industry. Lorem Ipsum has been the <br /> industry</p>
+                        <p>Want to join the most creative and sharp minds out there? You have come to right place. Send us your resume so you can be the part of our team.</p>
                     </div>
                     <div>
                         <button className='bg-black text-white text-center text-xs lg:text-lg normal-case px-9 lg:px-12 py-4 lg:py-5 rounded-[10px] mt-10 '>Look for open positions</button>
