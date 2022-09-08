@@ -15,7 +15,7 @@ const HomeStart = () => {
             <AboutDetails></AboutDetails>
             <Stats></Stats>
             <Services></Services>
-            <Partner></Partner>
+            {/* <Partner></Partner> */}
             <Rating></Rating>
         </div>
     );

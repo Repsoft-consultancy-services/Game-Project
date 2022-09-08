@@ -41,35 +41,13 @@ const RatingSlider = () => {
             >
                 <SwiperSlide>
                     <div className='h-[265px] lg:h-[390px] text-center p-3 lg:p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
-                        <div className='flex items-center justify-evenly'>
-                            <div className='rounded-full'>
-                                <Image src={user} alt=""></Image>
-                            </div>
-                            <div className='flex flex-col'>
-                                <h1 className='text-base lg:text-2xl font-bold'>Lorem Ipsun</h1>
-                                <StarRatings
-                                    rating={5}
-                                    starRatedColor="black"
-                                    numberOfStars={5}
-                                    name='rating'
-                                    starDimension="24px"
-                                    starSpacing="0px"
-                                />
-                            </div>
-                        </div>
-                        <div className='mt-5 lg:mt-20 font-normal lg:font-semibold'>
-                            <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry”</p>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className='h-[265px] lg:h-[390px] text-center p-3 lg:p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
                         <div className='flex items-center justify-between'>
                             <div className='rounded-full'>
                                 <Image src={user} alt=""></Image>
                             </div>
                             <div className='flex flex-col'>
-                                <h1 className='text-base lg:text-2xl font-bold'>Lorem Ipsun</h1>
+                                <h1 className='text-base lg:text-2xl font-bold'>Henrik Nystrom</h1>
+                                <h2>CEO-StarVault AB</h2>
                                 <StarRatings
                                     rating={5}
                                     starRatedColor="black"
@@ -81,165 +59,16 @@ const RatingSlider = () => {
                             </div>
                         </div>
                         <div className='mt-5 lg:mt-20 font-normal lg:font-semibold'>
-                            <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry”</p>
+                            <p>We were in need of a QA team. We stumbled upon Ravendise and it couldn&apos;t be better.</p>
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide>
-                    <div className='h-[265px] lg:h-[390px] text-center p-3 lg:p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
-                        <div className='flex items-center justify-between'>
-                            <div className='rounded-full'>
-                                <Image src={user} alt=""></Image>
-                            </div>
-                            <div className='flex flex-col'>
-                                <h1 className='text-base lg:text-2xl font-bold'>Lorem Ipsun</h1>
-                                <StarRatings
-                                    rating={5}
-                                    starRatedColor="black"
-                                    numberOfStars={5}
-                                    name='rating'
-                                    starDimension="24px"
-                                    starSpacing="0px"
-                                />
-                            </div>
-                        </div>
-                        <div className='mt-5 lg:mt-20 font-normal lg:font-semibold'>
-                            <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry”</p>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide><div className='h-[265px] lg:h-[390px] text-center p-3 lg:p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
-                    <div className='flex items-center justify-between'>
-                        <div className='rounded-full'>
-                            <Image src={user} alt=""></Image>
-                        </div>
-                        <div className='flex flex-col'>
-                            <h1 className='text-base lg:text-2xl font-bold'>Lorem Ipsun</h1>
-                            <StarRatings
-                                rating={5}
-                                starRatedColor="black"
-                                numberOfStars={5}
-                                name='rating'
-                                starDimension="24px"
-                                starSpacing="0px"
-                            />
-                        </div>
-                    </div>
-                    <div className='mt-5 lg:mt-20 font-normal lg:font-semibold'>
-                        <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry”</p>
-                    </div>
-                </div></SwiperSlide>
-                <SwiperSlide><div className='h-[265px] lg:h-[390px] text-center p-3 lg:p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
-                    <div className='flex items-center justify-between'>
-                        <div className='rounded-full'>
-                            <Image src={user} alt=""></Image>
-                        </div>
-                        <div className='flex flex-col'>
-                            <h1 className='text-base lg:text-2xl font-bold'>Lorem Ipsun</h1>
-                            <StarRatings
-                                rating={5}
-                                starRatedColor="black"
-                                numberOfStars={5}
-                                name='rating'
-                                starDimension="24px"
-                                starSpacing="0px"
-                            />
-                        </div>
-                    </div>
-                    <div className='mt-5 lg:mt-20 font-normal lg:font-semibold'>
-                        <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry”</p>
-                    </div>
-                </div></SwiperSlide>
-                <SwiperSlide><div className='h-[265px] lg:h-[390px] text-center p-3 lg:p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
-                    <div className='flex items-center justify-between'>
-                        <div className='rounded-full'>
-                            <Image src={user} alt=""></Image>
-                        </div>
-                        <div className='flex flex-col'>
-                            <h1 className='text-base lg:text-2xl font-bold'>Lorem Ipsun</h1>
-                            <StarRatings
-                                rating={5}
-                                starRatedColor="black"
-                                numberOfStars={5}
-                                name='rating'
-                                starDimension="24px"
-                                starSpacing="0px"
-                            />
-                        </div>
-                    </div>
-                    <div className='mt-5 lg:mt-20 font-normal lg:font-semibold'>
-                        <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry”</p>
-                    </div>
-                </div></SwiperSlide>
-                <SwiperSlide><div className=' h-[265px] lg:h-[390px] text-center p-3 lg:p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
-                    <div className='flex items-center justify-between'>
-                        <div className='rounded-full'>
-                            <Image src={user} alt=""></Image>
-                        </div>
-                        <div className='flex flex-col'>
-                            <h1 className='text-base lg:text-2xl font-bold'>Lorem Ipsun</h1>
-                            <StarRatings
-                                rating={5}
-                                starRatedColor="black"
-                                numberOfStars={5}
-                                name='rating'
-                                starDimension="24px"
-                                starSpacing="0px"
-                            />
-                        </div>
-                    </div>
-                    <div className='mt-5 lg:mt-20 font-normal lg:font-semibold'>
-                        <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry”</p>
-                    </div>
-                </div></SwiperSlide>
-                <SwiperSlide><div className=' h-[265px] lg:h-[390px] text-center p-3 lg:p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
-                    <div className='flex items-center justify-between'>
-                        <div className='rounded-full'>
-                            <Image src={user} alt=""></Image>
-                        </div>
-                        <div className='flex flex-col'>
-                            <h1 className='text-base lg:text-2xl font-bold'>Lorem Ipsun</h1>
-                            <StarRatings
-                                rating={5}
-                                starRatedColor="black"
-                                numberOfStars={5}
-                                name='rating'
-                                starDimension="24px"
-                                starSpacing="0px"
-                            />
-                        </div>
-                    </div>
-                    <div className='mt-5 lg:mt-20 font-normal lg:font-semibold'>
-                        <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry”</p>
-                    </div>
-                </div></SwiperSlide>
-                <SwiperSlide><div className=' h-[265px] lg:h-[390px] text-center p-3 lg:p-10 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'>
-                    <div className='flex items-center justify-between'>
-                        <div className='rounded-full'>
-                            <Image src={user} alt=""></Image>
-                        </div>
-                        <div className='flex flex-col'>
-                            <h1 className='text-base lg:text-2xl font-bold'>Lorem Ipsun</h1>
-                            <StarRatings
-                                rating={5}
-                                starRatedColor="black"
-                                numberOfStars={5}
-                                name='rating'
-                                starDimension="24px"
-                                starSpacing="0px"
-                            />
-                        </div>
-                    </div>
-                    <div className='mt-5 lg:mt-20 font-normal lg:font-semibold'>
-                        <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry”</p>
-                    </div>
-                </div></SwiperSlide>
             </Swiper>
             <div className='flex justify-center lg:justify-end space-x-3'>
                 <div ref={navigationPrevRef} >
                     <button className='btn rounded-full bg-black'><FaLessThan /></button>
                 </div>
-                <div ref={navigationNextRef}>
+                <div ref={navigationNextRef}> 
                     <button className='btn rounded-full bg-white border-0 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]'><FaGreaterThan className='text-black' /></button>
                 </div>
             </div>
