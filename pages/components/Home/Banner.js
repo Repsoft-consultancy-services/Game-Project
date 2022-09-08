@@ -19,7 +19,7 @@ const Banner = () => {
                         <Image src={RavendiseBanner} alt=""></Image>
                     </div>
                     <div className='flex justify-center lg:justify-start'>
-                        <Link href='#aboutdetails' scroll={true}><button className='bg-black text-white text-center text-xs lg:text-lg normal-case px-12 py-5 rounded-[10px] mt-10 '><div className='flex justify-between items-center' > < BsArrowDown />Check Out</div></button></Link>
+                        <Link href='#aboutdetails'><button className='bg-black text-white text-center text-xs lg:text-lg normal-case px-12 py-5 rounded-[10px] mt-10 '><div className='flex justify-between items-center' > < BsArrowDown />Check Out</div></button></Link>
                     </div>
                 </div>
                 <div className='hidden lg:block'>
