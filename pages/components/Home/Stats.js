@@ -27,7 +27,7 @@ const Stats = () => {
                         <p className='text-[10px] lg:text-base mt-4'>Years In Industry</p>
                     </div>
                     <div className='px-3 lg:px-10 pb-3 lg:pb-10'>
-                        <h1 className='text-xl lg:text-5xl font-bold'><CountUp end={1} />M+</h1>
+                        <h1 className='text-xl lg:text-5xl font-bold'><CountUp end={50} />K+</h1>
                         <p className='text-[10px] lg:text-base mt-4'>Testing Hours</p>
                     </div>
 

@@ -1,16 +1,50 @@
 import React from 'react';
-import { GoLocation } from 'react-icons/go'
-import { FiPhoneCall } from 'react-icons/fi'
-import { IoIosMail } from 'react-icons/io'
-import { AiOutlineInstagram, AiFillYoutube, AiOutlineTwitter } from 'react-icons/ai';
-import { FaFacebookF } from 'react-icons/fa';
-import { IoLogoTwitch } from 'react-icons/io';
+import { AiOutlineInstagram, AiFillYoutube, AiFillLinkedin, AiOutlineCopyrightCircle } from 'react-icons/ai';
+import { FaDiscord, FaTwitter } from 'react-icons/fa';
+import { BiWorld } from 'react-icons/bi';
+import Image from 'next/image';
+import RD from '../../../public/RavendiseBannerWhite.png'
 import Link from 'next/link';
 
 const Footer = () => {
     return (
         <div className='w-full bg-black text-white'>
-            <div className='p-10 lg:p-20'>
+            <div className='bg-white text-black pb-10'>
+                <h4 className='text-xl text-center font-semibold mb-3 uppercase'>Stay Connected</h4>
+                <div className='flex justify-center space-x-4 text-3xl'>
+                    <a className='border border-black rounded-full p-1' target="_blank" rel="noreferrer" href="https://www.instagram.com/ravendise_official/"><AiOutlineInstagram className='hover:cursor-pointer' /></a>
+                    <a className='border border-black rounded-full p-1' target="_blank" rel="noreferrer" href="https://discord.gg/Z2F4uPHngD"><FaDiscord className='hover:cursor-pointer' /></a>
+                    <a className='border border-black rounded-full p-1' target="_blank" rel="noreferrer" href="https://youtube.com/channel/UC02Leyeh-kCL-OcnP4vGV1g"><AiFillYoutube className='hover:cursor-pointer' /></a>
+                    <a className='border border-black rounded-full p-1' target="_blank" rel="noreferrer" href="https://twitter.com/RavendiseStudio"><FaTwitter className='hover:cursor-pointer' /></a>
+                    <a className='border border-black rounded-full p-1' target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/ravendise/"><AiFillLinkedin className='hover:cursor-pointer' /></a>
+                </div>
+            </div>
+            <div className='py-5 space-y-5'>
+                <div className='flex items-center justify-center'>
+                    <BiWorld /> English (US)
+                </div>
+                <div className='flex items-center justify-center'>
+                    <Image width={125} height={30} src={RD} alt=""></Image>
+                </div>
+                <div className='flex justify-center items-center text-xs font-semibold uppercase '>
+                    <Link href="/"><h3 className='border-r border-white px-2'>careers</h3></Link>
+                    <Link href="/aboutUs"><h3 className='border-r border-white px-2'>about</h3></Link>
+                    <Link href="/joinUs"><h3 className='border-r border-white px-2'>support</h3></Link>
+                    <Link href="/contactUs"><h3 className='px-2'>contact us</h3></Link>
+                </div>
+                <div className='flex flex-col justify-center items-center text-[10px] font-semibold'>
+                    <p>©2022 ravendise, inc. all right reserved</p>
+                    <p>All trademarks referenced here in are the properties of their respective owners</p>
+                </div>
+                <div className='flex justify-center items-center text-xs font-semibold uppercase '>
+                    <p className='border-r border-white px-2'>privacy</p>
+                    <p className='border-r border-white px-2'>legal</p>
+                    <p className='border-r border-white px-2'>terms</p>
+                    <p className='border-r border-white px-2'>cookie policy</p>
+                    <p className='px-2'>cookie settings</p>
+                </div>
+            </div>
+            {/* <div className='p-10 lg:p-20'>
                 <div className='flex flex-row justify-between items-start'>
                     <div>
                         <h1 className='text-[8.75px] lg:text-3xl font-semibold'>Contact Us</h1>
@@ -58,19 +92,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                {/* <div className='mt-8'>
-                    <hr />
-                </div>
-                <div className='flex justify-between mt-8 -mb-10 text-slate-400'>
-                    <div>
-                        <p>Copyright © 2022Ravendise, All rights reserved  </p>
-                    </div>
-                    <div className='flex justify-between space-x-16 mr-16'>
-                        <p>Privacy Policy</p>
-                        <p>Terms & Conditions</p>
-                    </div>
-                </div> */}
-            </div>
+            </div> */}
         </div>
     );
 };

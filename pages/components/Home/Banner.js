@@ -4,6 +4,7 @@ import RavendiseBanner from '../../../public/RavendiseBanner.png'
 import aboutBannerlg from '../../../public/aboutBannerlg.png'
 import aboutBannersm from '../../../public/aboutBannersm.png'
 import { BsArrowDown } from 'react-icons/bs'
+import Link from 'next/link';
 
 const Banner = () => {
     return (
@@ -18,7 +19,7 @@ const Banner = () => {
                         <Image src={RavendiseBanner} alt=""></Image>
                     </div>
                     <div className='flex justify-center lg:justify-start'>
-                        <button className='bg-black text-white text-center text-xs lg:text-lg normal-case px-12 py-5 rounded-[10px] mt-10 '><div className='flex justify-between items-center' > < BsArrowDown />Check Out</div></button>
+                        <Link href='#aboutdetails'><button className='bg-black text-white text-center text-xs lg:text-lg normal-case px-12 py-5 rounded-[10px] mt-10 '><div className='flex justify-between items-center' > < BsArrowDown />Check Out</div></button></Link>
                     </div>
                 </div>
                 <div className='hidden lg:block'>

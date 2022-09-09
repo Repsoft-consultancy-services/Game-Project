@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import HomeStart from './components/Home/HomeStart'
-import Footer from './components/shared/Footer'
-import Navbar from './components/shared/Navbar'
 
 export default function Home() {
   return (

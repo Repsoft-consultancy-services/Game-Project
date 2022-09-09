@@ -10,13 +10,16 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.7.0",
     "daisyui": "^2.24.0",
+    "firebase": "^9.9.4",
     "next": "^12.2.5",
     "react": "^18.2.0",
     "react-countup": "^6.3.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-star-ratings": "^2.3.0",
+    "react-toastify": "^9.0.8",
     "swiper": "^8.3.2"
   },
   "devDependencies": {

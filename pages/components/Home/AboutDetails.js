@@ -5,7 +5,7 @@ import cat from '../../../public/catface.png'
 
 const AboutDetails = () => {
     return (
-        <div className='xl:w-[80rem] 2xl:w-[100rem] 3xl:w-[150rem] mt-20'>
+        <div id='aboutdetails' className='xl:w-[80rem] 2xl:w-[100rem] 3xl:w-[150rem] mt-20'>
             <h1 className='text-[20px] lg:text-4xl font-bold text-center underline'>So Who Are We?</h1>
             <div className='flex justify-center items-center relative -mt-0 lg:-mt-[80px]'>
                 <div className='flex-1 flex items-center flex-col'>

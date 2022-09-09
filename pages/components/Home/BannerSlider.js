@@ -53,7 +53,7 @@ const BannerSlider = () => {
                 >
                     <SwiperSlide>
                         <div className=' bg-white'>
-                            <iframe width="297" height="170" src="https://www.youtube.com/embed/lcmKphUoteE?controls=0" title="YouTube video player" className='rounded-[5px] shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]' allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe width="297" height="170" src="https://www.youtube.com/embed/pspZensaUzU?controls=0" title="YouTube video player" className='rounded-[5px] shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)]' allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
