@@ -42,7 +42,7 @@ const Form = () => {
             )
     }
     return (
-        <div className='text-black px-5 lg:px-24 mb-10'>
+        <div className='text-black px-5 lg:px-24 mb-10 2xl:w-[100rem] 2xl:mx-auto'>
             <h1 className='text-[32px] lg:text-[40px] font-bold uppercase text-center mb-14'>Fill up for enquiry</h1>
             <div className="rounded-[20px] bg-white drop-shadow-[2px_4px_25px_rgba(0,0,0,0.15)]">
                 <div className='flex items-center justify-center space-x-0 lg:space-x-10'>

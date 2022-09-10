@@ -9,6 +9,7 @@ import { IoIosArrowUp } from 'react-icons/io';
 
 const Navbar = () => {
     const [servicedrop, setServicedrop] = useState(false)
+    const [menudrop, setMenudrop] = useState(false)
     const [home, setHome] = useState(true)
     const [service, setService] = useState(false)
     const [contact, setContact] = useState(false)
@@ -26,6 +27,7 @@ const Navbar = () => {
         setJoin(false)
         setAbout(false)
         setService(false)
+        setMenudrop(false)
     }
     const handlecontact = () => {
         setHome(false)
@@ -33,6 +35,7 @@ const Navbar = () => {
         setJoin(false)
         setAbout(false)
         setService(false)
+        setMenudrop(false)
     }
     const handleabout = () => {
         setHome(false)
@@ -40,6 +43,7 @@ const Navbar = () => {
         setJoin(false)
         setAbout(true)
         setService(false)
+        setMenudrop(false)
     }
     const handlejoin = () => {
         setHome(false)
@@ -47,6 +51,7 @@ const Navbar = () => {
         setJoin(true)
         setAbout(false)
         setService(false)
+        setMenudrop(false)
     }
     const handleservice = () => {
         setHome(false)
@@ -54,6 +59,7 @@ const Navbar = () => {
         setJoin(false)
         setAbout(false)
         setService(true)
+        setMenudrop(true)
     }
 
     const menu = <>
@@ -69,8 +75,8 @@ const Navbar = () => {
         <li onClick={handleabout}><Link href='/aboutUs'><p className={`bg-white ${about ? 'font-bold' : 'font-normal'}`}>About Us</p></Link></li>
     </>
     return (
-        <div>
-            <div className="navbar border-b-2 border-black h-[20px]">
+        <div className='border-b-2 border-black'>
+            <div className="navbar h-[20px] w-full 2xl:w-[100rem] 2xl:mx-auto">
                 <Link href="/">
                     <div className='hidden lg:block'>
                         <Image src={RD} alt="" height={58} width={86} />
@@ -78,13 +84,13 @@ const Navbar = () => {
                 </Link>
                 <div className="navbar-start lg:hidden -ml-5">
                     <div className="dropdown">
-                        <label tabIndex="0" className="btn btn-ghost">
+                        <label onClick={()=>setMenudrop(true)} tabIndex="0" className="btn btn-ghost">
                             <CgMenuLeft className='text-4xl' />
                         </label>
-                        <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow
-                     rounded-md w-52 bg-white">
+                        <ul tabIndex="0" className={`menu menu-compact ${menudrop ? 'dropdown-content' : 'hidden'} mt-3 p-2 shadow
+                     rounded-md w-52 bg-white`}>
                             {menu}
-                            <div className='flex ml-3 mt-2 space-x-3 text-3xl'>
+                            <div className='flex ml-3 mt-2 space-x-3 text-2xl'>
                                 <a target="_blank" rel="noreferrer" href="https://www.instagram.com/ravendise_official/"><AiOutlineInstagram className='hover:cursor-pointer' /></a>
                                 <a target="_blank" rel="noreferrer" href="https://discord.gg/Z2F4uPHngD"><FaDiscord className='hover:cursor-pointer' /></a>
                                 <a target="_blank" rel="noreferrer" href="https://youtube.com/channel/UC02Leyeh-kCL-OcnP4vGV1g"><AiFillYoutube className='hover:cursor-pointer' /></a>
@@ -116,11 +122,11 @@ const Navbar = () => {
                 </div>
             </div>
             {servicedrop && <div onMouseLeave={handledropdown} className="bg-white rounded-md mt-1 absolute top-[59px] left-32 z-50 flex flex-col space-y-2">
-                <div onClick={handledropdown} className='rounded-md px-2 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)] hover:cursor-pointer hover:bg-black hover:text-white'><Link href='/services'><p className='text-base uppercase'>Quality assurance</p></Link></div>
-                <div onClick={handledropdown} className='rounded-md px-2 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)] hover:cursor-pointer hover:bg-black hover:text-white'><Link href='/services'><p className='text-base uppercase'>3D ART</p></Link></div>
-                <div onClick={handledropdown} className='rounded-md px-2 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)] hover:cursor-pointer hover:bg-black hover:text-white'><Link href='/services'><p className='text-base uppercase'>2D ART</p></Link></div>
-                <div onClick={handledropdown} className='rounded-md px-2 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)] hover:cursor-pointer hover:bg-black hover:text-white'><Link href='/services'><p className='text-base uppercase'>SOFTWARE DEVELOPMENT</p></Link></div>
-                <div onClick={handledropdown} className='rounded-md px-2 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)] hover:cursor-pointer hover:bg-black hover:text-white'><Link href='/services'><p className='text-base uppercase'>Graphic Design</p></Link></div>
+                <div onClick={handledropdown} className='rounded-md px-2 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)] hover:cursor-pointer hover:bg-black hover:text-white'><Link href={{pathname:'/services',query:{keyword:'0'}}}><p className='text-base uppercase'>Quality assurance</p></Link></div>
+                <div onClick={handledropdown} className='rounded-md px-2 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)] hover:cursor-pointer hover:bg-black hover:text-white'><Link href={{pathname:'/services',query:{keyword:'2'}}}><p className='text-base uppercase'>3D ART</p></Link></div>
+                <div onClick={handledropdown} className='rounded-md px-2 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)] hover:cursor-pointer hover:bg-black hover:text-white'><Link href={{pathname:'/services',query:{keyword:'1'}}}><p className='text-base uppercase'>2D ART</p></Link></div>
+                <div onClick={handledropdown} className='rounded-md px-2 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)] hover:cursor-pointer hover:bg-black hover:text-white'><Link href={{pathname:'/services',query:{keyword:'4'}}}><p className='text-base uppercase'>SOFTWARE DEVELOPMENT</p></Link></div>
+                <div onClick={handledropdown} className='rounded-md px-2 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)] hover:cursor-pointer hover:bg-black hover:text-white'><Link href={{pathname:'/services',query:{keyword:'3'}}}><p className='text-base uppercase'>Graphic Design</p></Link></div>
                 <div onClick={handledropdown} className='rounded-md px-2 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)] hover:cursor-pointer hover:bg-black hover:text-white'><p className='text-base uppercase flex justify-center'><IoIosArrowUp /></p></div>
             </div>}
         </div>

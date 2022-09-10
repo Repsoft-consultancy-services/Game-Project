@@ -13,7 +13,7 @@ const Banner = () => {
                 <div className='block lg:hidden'>
                     <Image src={SBsm} alt=""></Image>
                 </div>
-                <div className='ml-0 lg:ml-20 text-center lg:text-left'>
+                <div className='ml-0 lg:ml-20 text-center lg:text-left 2xl:ml-48'>
                     <h1 className='text-5xl lg:text-[64px] font-bold'>OUR<br />SERVICES</h1>
                     <p className='text-2xl lg:font-medium'>Ravendise specialises in all services from design to development. <br /> We cover all the important areas with our inhouse team that is <br /> professionalised in their own areas</p>
                 </div>
