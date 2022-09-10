@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/navigation";
@@ -9,10 +9,14 @@ import Art2D from './Art2D';
 import Art3D from './Art3D';
 import GraphicDesign from './GraphicDesign';
 import SoftwareDevelopment from './SoftwareDevelopment';
+import { useRouter } from 'next/router';
 
 const ServiceSlider = () => {
     const navigationPrevRef = useRef(null);
     const navigationNextRef = useRef(null);
+    const router = useRouter()
+    const slidestart = router.query.keyword
+
     return (
         <div className='mt-24'>
             <h1 className='text-4xl lg:text-5xl text-center font-semibold'>Services Explained</h1>
@@ -25,6 +29,7 @@ const ServiceSlider = () => {
                 </div>
                 <Swiper
                     spaceBetween={10}
+                    initialSlide={slidestart}
                     modules={[Navigation]}
                     onBeforeInit={(swiper) => {
                         swiper.params.navigation.prevEl = navigationPrevRef.current;
@@ -53,7 +58,7 @@ const ServiceSlider = () => {
                         <SoftwareDevelopment></SoftwareDevelopment>
                     </SwiperSlide>
                 </Swiper>
-                
+
             </div>
         </div>
     );

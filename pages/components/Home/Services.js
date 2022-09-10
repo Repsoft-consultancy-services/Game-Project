@@ -12,7 +12,7 @@ const Services = () => {
     const navigationPrevRef = useRef(null);
     const navigationNextRef = useRef(null);
     return (
-        <div className='mt-5 mb-16 lg:mb-0 w-full'>
+        <div className='mt-5 mb-16 lg:mb-0 w-full 2xl:w-[100rem] 2xl:mx-auto'>
             <h1 className='text-2xl lg:text-5xl font-bold text-center text-black'>Services We offer</h1>
             <div className='flex flex-col-reverse'>
                 <div className='flex justify-center space-x-3 my-10'>
@@ -60,7 +60,7 @@ const Services = () => {
                                         Ravendise is a community of software testers who are passionate about quality and love to test. We develop an in-depth understanding of the applications under test and include software testing strategies that deliver quantifiable results.
                                     </div>
                                     <p className='mt-20'>
-                                        <Link href="/services"><p className='button'>Read More</p></Link>
+                                        <Link href={{pathname:'/services',query:{keyword:'0'}}}><p className='button'>Read More</p></Link>
                                     </p>
                                 </div>
                             </div>
@@ -74,7 +74,7 @@ const Services = () => {
                                         Ravendise is a 3D game art outsourcing company providing a full spectrum of custom 3D art services from 3D concept development to complex 3D art projects. Since we always strive to create supreme-quality art that interprets the client&apos;s thoughts we offer to hire 3D designers from our team for projects of any complexity.
                                     </div>
                                     <p className='mt-20'>
-                                        <Link href="/services"><p className='button'>Read More</p></Link>
+                                        <Link href={{pathname:'/services',query:{keyword:'2'}}}><p className='button'>Read More</p></Link>
                                     </p>
                                 </div>
                             </div>
@@ -88,7 +88,7 @@ const Services = () => {
                                         Ravendise is a 2D art company with an exceptional reputation for talented 2D game artists with solid experience in the industry. We offer 2D game art outsourcing services for projects of any size and deliver high-quality artworks satisfying customers around the world.
                                     </div>
                                     <p className='mt-24'>
-                                        <Link href="/services"><p className='button'>Read More</p></Link>
+                                        <Link href={{pathname:'/services',query:{keyword:'1'}}}><p className='button'>Read More</p></Link>
                                     </p>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@ const Services = () => {
                                         Our work encompasses graphics and identity, strategy and positioning, products and packaging, exhibitions and installations, websites and digital experiences, advertising and communications, data visualizations and typefaces, sound and motion
                                     </div>
                                     <p className='mt-20'>
-                                        <Link href="/services"><p className='button'>Read More</p></Link>
+                                        <Link href={{pathname:'/services',query:{keyword:'3'}}}><p className='button'>Read More</p></Link>
                                     </p>
                                 </div>
                             </div>
@@ -117,7 +117,7 @@ const Services = () => {
                                         We help our partners accelerate disruption both within their organizations and industries. They strategize new ideas and obtain real business value by getting the most out of our production-ready custom software development services. Talk to our experts today!
                                     </div>
                                     <p className='mt-16'>
-                                        <Link href="/services"><p className='button'>Read More</p></Link>
+                                        <Link href={{pathname:'/services',query:{keyword:'4'}}}><p className='button'>Read More</p></Link>
                                     </p>
                                 </div>
                             </div>
