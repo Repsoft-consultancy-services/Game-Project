@@ -76,7 +76,7 @@ const Navbar = () => {
     </>
     return (
         <div className='border-b-2 border-black'>
-            <div className="navbar h-[20px] w-full 2xl:w-[100rem] 2xl:mx-auto">
+            <div className="navbar h-[20px] w-full 2xl:w-[94rem] xl:mx-auto">
                 <Link href="/">
                     <div className='hidden lg:block'>
                         <Image src={RD} alt="" height={58} width={86} />
@@ -121,7 +121,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            {servicedrop && <div onMouseLeave={handledropdown} className="bg-white rounded-md mt-1 absolute top-[59px] left-32 z-50 flex flex-col space-y-2">
+            {servicedrop && <div onMouseLeave={handledropdown} className="bg-white rounded-md mt-1 absolute top-[59px] left-32 2xl:left-[42rem] z-50 flex flex-col space-y-2">
                 <div onClick={handledropdown} className='rounded-md px-2 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)] hover:cursor-pointer hover:bg-black hover:text-white'><Link href={{pathname:'/services',query:{keyword:'0'}}}><p className='text-base uppercase'>Quality assurance</p></Link></div>
                 <div onClick={handledropdown} className='rounded-md px-2 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)] hover:cursor-pointer hover:bg-black hover:text-white'><Link href={{pathname:'/services',query:{keyword:'2'}}}><p className='text-base uppercase'>3D ART</p></Link></div>
                 <div onClick={handledropdown} className='rounded-md px-2 shadow-[2px_4px_15px_0_rgba(0,0,0,0.15)] hover:cursor-pointer hover:bg-black hover:text-white'><Link href={{pathname:'/services',query:{keyword:'1'}}}><p className='text-base uppercase'>2D ART</p></Link></div>

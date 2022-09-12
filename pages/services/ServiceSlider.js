@@ -18,7 +18,7 @@ const ServiceSlider = () => {
     const slidestart = router.query.keyword
 
     return (
-        <div className='mt-24'>
+        <div className='mt-24 w-full 2xl:w-[100rem] 2xl:mx-auto'>
             <h1 className='text-4xl lg:text-5xl text-center font-semibold'>Services Explained</h1>
             <div className='relative z-10 flex items-baseline space-x-3 h-auto'>
                 <div ref={navigationPrevRef} className="order-1">

@@ -13,7 +13,7 @@ const Banner = () => {
                 <div className='block lg:hidden px-10'>
                     <Image src={aboutBannersm} alt=""></Image>
                 </div>
-                <div className='ml-0 lg:ml-32'>
+                <div className='ml-0 lg:ml-32 2xl:ml-[14rem] 3xl:ml-[34rem]'>
                     <h1 className='text-5xl first-letter:lg:text-6xl font-bold my-3 text-center lg:text-left'>WELCOME TO</h1>
                     <div className='px-10 lg:px-0'>
                         <Image src={RavendiseBanner} alt=""></Image>

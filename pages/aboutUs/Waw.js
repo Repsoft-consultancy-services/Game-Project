@@ -4,14 +4,14 @@ import spoidor from '../../public/spoidormon.png'
 
 const Waw = () => {
     return (
-        <div className='w-full text-black'>
+        <div className='w-full 2xl:w-[100rem] 2xl:mx-auto text-black'>
             <div className='my-20 '>
                 <h1 className='text-center text-3xl underline font-semibold' >Who are we?</h1>
                 <div className='flex flex-row-reverse mt-16'>
-                    <div className='hidden lg:block'>
+                    <div className='hidden lg:block 2xl:mr-32'>
                         <Image src={spoidor} alt=""></Image>
                     </div>
-                    <div className='flex-1 2xl:ml-56'>
+                    <div className='flex-1 ml-16'>
                         <p className='text-2xl font-semibold'>For Studios and Publishers, traditional outsourcing models have proven costly,
                             often requiring more supervision and resources than expected to achieve quality
                             return on the investment made. <br /><br />

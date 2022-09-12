@@ -55,7 +55,7 @@ const Form = () => {
                         <h1 className='text-4xl lg:text-5xl uppercase font-bold my-3 text-center lg:text-left mb-10'>join us</h1>
                         <form onSubmit={sendEmail}>
                             <div className='w-full'>
-                                <div className='flex flex-col lg:flex-row space-x-0 xl:space-x-20 2xl:space-x-32 mb-7'>
+                                <div className='flex flex-col xl:flex-row space-x-0 xl:space-x-20 2xl:space-x-32 mb-7'>
                                     <div className="form-control w-full lg:max-w-xs">
                                         <label className="label">
                                             <span className="text-base font-semibold">Full Name<span className='text-red-600'>*</span></span>

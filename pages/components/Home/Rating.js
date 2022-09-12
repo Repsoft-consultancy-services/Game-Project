@@ -7,7 +7,7 @@ import RatingSlider from './RatingSlider';
 const Rating = () => {
     const [rating, setRating] = useState(4.5)
     return (
-        <div className='w-full 2xl:w-[100rem] 3xl:w-[150rem] my-20'>
+        <div className='w-full 2xl:w-[92rem] 2xl:mx-auto my-20'>
             <div className='flex flex-col lg:flex-row items-center justify-between'>
                 <div>
                     <h1 className='text-2xl lg:text-4xl font-bold'>Our Clients</h1>

@@ -30,7 +30,7 @@ const Form = () => {
         e.target.reset()
     };
     return (
-        <div className='text-black px-5 lg:px-24 my-20 2xl:w-[100rem] 2xl:mx-auto'>
+        <div className='text-black px-5 lg:px-24 my-20 w-full 2xl:w-[98rem] 2xl:mx-auto'>
             <div className="rounded-[20px] bg-white drop-shadow-[2px_4px_25px_rgba(0,0,0,0.15)]">
                 <div className='flex flex-col-reverse lg:flex-row items-center justify-center space-x-0 lg:space-x-10'>
                     <div className="bg-black text-white rounded-[20px] w-full lg:w-1/3 h-[500px] lg:h-[670px] ">

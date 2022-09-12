@@ -16,7 +16,7 @@ const BannerSlider = () => {
                     <button className=''><FaLessThan className='text-black' /></button>
                 </div>
                 <div ref={navigationNextRef} className="order-3">
-                    <button className=''><FaGreaterThan className='text-black xl:text-white 3xl:text-black' /></button>
+                    <button className=''><FaGreaterThan className='text-black xl:text-white' /></button>
                 </div>
                 <Swiper
                     spaceBetween={0}

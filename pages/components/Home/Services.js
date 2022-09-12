@@ -12,7 +12,7 @@ const Services = () => {
     const navigationPrevRef = useRef(null);
     const navigationNextRef = useRef(null);
     return (
-        <div className='mt-5 mb-16 lg:mb-0 w-full 2xl:w-[100rem] 2xl:mx-auto'>
+        <div className='mt-5 mb-16 lg:mb-0 w-full 2xl:w-[92rem] 2xl:mx-auto'>
             <h1 className='text-2xl lg:text-5xl font-bold text-center text-black'>Services We offer</h1>
             <div className='flex flex-col-reverse'>
                 <div className='flex justify-center space-x-3 my-10'>
@@ -25,7 +25,7 @@ const Services = () => {
                 </div>
                 <div className="h-[600px]">
                     <Swiper
-                        spaceBetween={50}
+                        spaceBetween={10}
                         modules={[Navigation]}
                         onBeforeInit={(swiper) => {
                             swiper.params.navigation.prevEl = navigationPrevRef.current;
